@@ -1,0 +1,52 @@
+.login-container{
+    background-color: black;
+    width: 45%;
+    height: auto;
+    justify-content:center;
+    padding: 20px;
+    margin: 50px auto auto;
+    /* margin-top: 50px; */
+    border-radius: 10px;
+    box-shadow: 0 5px 15px 0 rgba(0, 0, 0, 0.2);
+}
+
+.loginhead{
+    text-align: center;
+    font-weight: 600;
+    color: white;
+    font-family: "Merienda", cursive;
+}
+
+.loginform{
+    margin: 30px auto ;
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    height: auto;
+    gap:  15px;
+}
+
+.inputbox{
+    padding: 7px;
+    border-radius: 10px;
+    border: none;
+}
+
+.loginform button{
+    padding: 7px;
+    background: white;
+    border: none;
+    color: black;
+    border-radius: 10px;
+}
+
+.loginform button:hover {
+    color: white;
+    background: rgba(12, 110, 253, 1);
+    transition: all 0.2s ease-in-out;
+}
+
+.reglink{
+    color: grey;
+}
+

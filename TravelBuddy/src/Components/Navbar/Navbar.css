@@ -1,0 +1,159 @@
+
+.NavbarItems {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 30px;
+  box-shadow: 0 5px 15px 0 rgba(0, 0, 0, 0.2);
+  /* width: 95%; */
+  height: 60px;
+  border-radius: 13px;
+  margin: 0.4cm;
+}
+
+.navbarlogo {
+  font: bold;
+  /* margin-left: 0.4cm;
+    margin-right: 5cm; */
+  /* text-align: center; */
+  margin: auto;
+  margin-left: 0;
+  color: white;
+  font-family: "Merienda", cursive;
+}
+
+.nav-menu {
+  display: grid;
+  grid-template-columns: repeat(6, auto);
+  grid-gap: 10px;
+  list-style: none;
+  align-items: center;
+  margin: auto;
+}
+
+.navlinks {
+  text-decoration: none;
+  color: white;
+  font-size: 1.2rem;
+  font-weight: 300;
+  padding: 0.7rem 1rem;
+  white-space: nowrap;
+  display: flex;
+  justify-content: center;
+}
+
+.navlinks:hover {
+  color: black;
+  transition: all 0.2s ease-in-out;
+}
+
+.signuplink{
+    display: none;
+}
+
+.signupbtn {
+  padding: 0.5rem 1rem;
+  white-space: nowrap;
+  border-radius: 0.7rem;
+  font-size: 1rem;
+  font-weight: 350;
+  border: none;
+  transition: all 0.2s ease-in-out;
+}
+
+.signupbtn:hover {
+  background-color: rgb(56, 52, 52);
+  color: white;
+}
+
+.menu-icons{
+    display: none;
+}
+
+@media screen and (max-width: 950px) {
+    .NavbarItems{
+        z-index: 99;
+    }
+  .nav-menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    margin: auto;
+    background: gray;
+    width: 100%;
+    height: auto;
+    position: absolute;
+    top: -100%;
+    left: 0;
+    opacity: 0;
+    align-items: stretch;
+    padding: 80px 0 30px 0;
+    margin: 0;
+    z-index: -1;
+    transition: all 0.6s ease-in;
+  }
+  .nav-menu.active {
+    top: 0;
+    opacity: 1;
+    z-index: -1;
+    transition: all 0.6s ease-out;
+  }
+
+  .navlinks{
+    /* display: block; */
+    width: 100%;
+    /* font-size: 1.2rem; */
+    padding: 2rem 0;
+  }
+
+  .navlinks:hover{
+    background: white;
+    color: black;
+    transition: all 0.2s ease-in-out;
+  }
+
+  .signupbtn {
+    display: none;
+    /* padding: 0.5rem 1rem;
+    white-space: nowrap;
+    border-radius: 0.7rem;
+    font-size: 1rem;
+    font-weight: 350;
+    border: none;
+    transition: all 0.2s ease-in-out; */
+  }
+  
+  /* .signupbtn:hover {
+    background-color: rgb(56, 52, 52);
+    color: white;
+  } */
+
+  .signuplink{
+    width: 100%;
+    padding: 2rem 0;
+    display: block;
+    text-align: center;
+    margin: auto;
+    width: 80%;
+    border-radius: 4px;
+    background: black;
+    text-decoration: none;
+    color: white;
+    font-size: 1.2rem;
+    letter-spacing: 2px;
+  }
+  .signuplink:hover{
+    background: white;
+    color: black;
+    transition: all 0.2s ease-in-out;
+  }
+
+  .menu-icons{
+    display: block;
+  }
+
+  .menu-icons i{
+    font-size: 1.2rem;
+    color: white;
+  }
+}

@@ -5,10 +5,14 @@
   align-items: center;
   padding: 0 30px;
   box-shadow: 0 5px 15px 0 rgba(0, 0, 0, 0.2);
-  /* width: 95%; */
+  width: 95%;
   height: 60px;
   border-radius: 13px;
-  margin: 0.4cm;
+  position: fixed;
+  top: 20px;
+  left: 50%;
+  transform: translate(-50%);
+  z-index: 9999;
 }
 
 .navbarlogo {
@@ -29,6 +33,7 @@
   list-style: none;
   align-items: center;
   margin: auto;
+  cursor: pointer;
 }
 
 .navlinks {
@@ -72,14 +77,14 @@
 
 @media screen and (max-width: 950px) {
     .NavbarItems{
-        z-index: 99;
+        z-index: 9999;
     }
   .nav-menu {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     margin: auto;
-    background: gray;
+    background:rgba(12, 110, 253, 1);
     width: 100%;
     height: auto;
     position: absolute;
@@ -87,10 +92,11 @@
     left: 0;
     opacity: 0;
     align-items: stretch;
-    padding: 80px 0 30px 0;
+    padding: 60px 0 30px 0;
     margin: 0;
     z-index: -1;
     transition: all 0.6s ease-in;
+    border-radius: 13px;
   }
   .nav-menu.active {
     top: 0;
@@ -114,19 +120,8 @@
 
   .signupbtn {
     display: none;
-    /* padding: 0.5rem 1rem;
-    white-space: nowrap;
-    border-radius: 0.7rem;
-    font-size: 1rem;
-    font-weight: 350;
-    border: none;
-    transition: all 0.2s ease-in-out; */
   }
   
-  /* .signupbtn:hover {
-    background-color: rgb(56, 52, 52);
-    color: white;
-  } */
 
   .signuplink{
     width: 100%;

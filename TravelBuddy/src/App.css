@@ -7,3 +7,7 @@
     box-sizing: border-box;
     font-family: 'Montserrat', sans-serif;
 }
+
+body{
+    background-image: url(/TravelBuddy/src/assets/beach-1236581_1280.jpg);
+}

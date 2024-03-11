@@ -2,12 +2,14 @@ import React from "react";
 import "./Login.css";
 import Navbar from "../Navbar/Navbar";
 import { Link } from "react-router-dom";
+import Home from "../Home/Home";
 
 const Login = () => {
   return ( 
     <>
-    <div>
         <Navbar/>
+    <div>
+
         <div  className="login-container">
         <h1 className="loginhead">Login</h1>
         <form className="loginform">

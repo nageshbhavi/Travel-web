@@ -8,6 +8,7 @@ import { useState } from "react";
 const Navbar = () => {
   const [clicked, setClicked] = useState(false);
 
+
   const handleClick = () => {
     setClicked(!clicked);
   };
@@ -24,10 +25,8 @@ const Navbar = () => {
           <i className={clicked ? "fas fa-times" : "fas fa-bars"}></i>
         </div>
 
-        <ul
-          onClick={handleMenu}
-          className={clicked ? "nav-menu active" : "nav-menu"}
-        >
+        <ul onClick={handleMenu}
+          className={clicked ? "nav-menu active" : "nav-menu"}>
           <li>
             <Link className="navlinks">Destinations</Link>
           </li>
@@ -56,3 +55,6 @@ const Navbar = () => {
 };
 
 export default Navbar;
+
+
+

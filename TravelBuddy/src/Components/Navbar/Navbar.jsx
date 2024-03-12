@@ -21,6 +21,7 @@ const Navbar = () => {
           <i className={clicked ? "fas fa-times" : "fas fa-bars"}></i>
         </div>
 
+        <div className="navlg">
         <ul className={clicked ? "nav-menu active" : "nav-menu"}>
           <li>
             <Link to={"/"} className="navlinks">Home</Link>
@@ -29,7 +30,7 @@ const Navbar = () => {
             <Link className="navlinks">Destinations</Link>
           </li>
           <li>
-            <Link className="navlinks">About</Link>
+            <Link className="navlinks">About Us</Link>
           </li>
           <li>
             <Link className="navlinks">Gallery</Link>
@@ -40,14 +41,12 @@ const Navbar = () => {
               Sign Up
             </Link>
           </li>
-          <li>
           <Link to={"/login"}>
             {" "}
             <button className="signupbtn">Sign Up</button>
           </Link>
-          </li>
-
         </ul>
+        </div>
       </nav>
     </>
   );

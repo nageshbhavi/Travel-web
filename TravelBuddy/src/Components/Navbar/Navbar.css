@@ -1,9 +1,9 @@
 
 .NavbarItems {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-between ;
   align-items: center;
-  padding: 0 30px;
+  padding:0 30px;
   box-shadow: 0 5px 15px 0 rgba(0, 0, 0, 0.2);
   width: 95%;
   height: 60px;
@@ -41,7 +41,7 @@
   color: white;
   font-size: 1.2rem;
   font-weight: 300;
-  padding: 0.7rem 1rem;
+  padding: 0.3rem 0.3rem;
   white-space: nowrap;
   display: flex;
   justify-content: center;
@@ -73,6 +73,10 @@
 
 .menu-icons{
     display: none;
+}
+
+.navlg{
+  margin-left: 20px;
 }
 
 @media screen and (max-width: 950px) {

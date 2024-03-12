@@ -8,14 +8,10 @@ import { useState } from "react";
 const Navbar = () => {
   const [clicked, setClicked] = useState(false);
 
-
   const handleClick = () => {
     setClicked(!clicked);
   };
 
-  const handleMenu = () => {
-    setClicked(!clicked);
-  };
   return (
     <>
       <nav className="NavbarItems bg-primary">
@@ -25,29 +21,32 @@ const Navbar = () => {
           <i className={clicked ? "fas fa-times" : "fas fa-bars"}></i>
         </div>
 
-        <ul onClick={handleMenu}
-          className={clicked ? "nav-menu active" : "nav-menu"}>
+        <ul className={clicked ? "nav-menu active" : "nav-menu"}>
+          <li>
+            <Link to={"/"} className="navlinks">Home</Link>
+          </li>
           <li>
             <Link className="navlinks">Destinations</Link>
           </li>
           <li>
-            <Link className="navlinks">About Us</Link>
+            <Link className="navlinks">About</Link>
           </li>
           <li>
             <Link className="navlinks">Gallery</Link>
           </li>
-          <li>
-            <Link className="navlinks">Contact Us</Link>
-          </li>
+          
           <li>
             <Link to={"/login"} className="signuplink">
               Sign Up
             </Link>
           </li>
+          <li>
           <Link to={"/login"}>
             {" "}
             <button className="signupbtn">Sign Up</button>
           </Link>
+          </li>
+
         </ul>
       </nav>
     </>
@@ -55,6 +54,3 @@ const Navbar = () => {
 };
 
 export default Navbar;
-
-
-

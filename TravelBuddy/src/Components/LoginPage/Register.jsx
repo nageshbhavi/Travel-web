@@ -2,14 +2,20 @@ import React, { useState } from "react";
 import "./Login.css";
 import Navbar from "../Navbar/Navbar";
 import { Link } from "react-router-dom";
+import axios from "axios";
 
 const Register = () => {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
 
-function registerUser(){
-  
+function registerUser(ev){
+  ev.preventDefault();
+  axios.post('/register',{
+    name,
+    email,
+    password,
+  });
 }
 
   return (
@@ -18,7 +24,7 @@ function registerUser(){
         <Navbar />
         <div className="login-container">
           <h1 className="loginhead">Register</h1>
-          <form className="loginform">
+          <form className="loginform"  onSubmit={registerUser}>
             <input
               className="inputbox"
               type="text"

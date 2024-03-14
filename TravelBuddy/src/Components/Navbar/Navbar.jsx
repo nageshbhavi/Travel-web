@@ -43,7 +43,7 @@ const Navbar = () => {
           </li>
           <Link to={"/login"}>
             {" "}
-            <button className="signupbtn">Sign Up</button>
+            <button className="signupbtn"><i className="fa-solid fa-bars userIcon"></i><i className="fa-solid fa-circle-user fa-xl userIcon"></i></button>
           </Link>
         </ul>
         </div>

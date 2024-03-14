@@ -57,18 +57,26 @@
 }
 
 .signupbtn {
-  padding: 0.5rem 1rem;
+  padding: 0.3rem ;
   white-space: nowrap;
   border-radius: 0.7rem;
   font-size: 1rem;
   font-weight: 350;
   border: none;
   transition: all 0.2s ease-in-out;
+  border: white  solid 1px;
+  background-color: rgba(12, 110, 253, 1);
+  color: white;
+  /* box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.2); */
 }
 
 .signupbtn:hover {
-  background-color: rgb(56, 52, 52);
-  color: white;
+  background-color: white;
+  color: rgba(12, 110, 253, 1);
+}
+
+.userIcon{
+  margin:0 4px;
 }
 
 .menu-icons{

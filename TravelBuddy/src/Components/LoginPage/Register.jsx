@@ -46,7 +46,7 @@ function registerUser(ev){
               value={password}
               onChange={(ev) => setPassword(ev.target.value)}
             />
-            <button>Register</button>
+            <button type="submit">Register</button>
             <div className="reglink">
               Already have an account?<Link to={"/login"}>Login</Link>
             </div>

@@ -1,37 +1,33 @@
 import React, { useState } from "react";
 import "./Login.css";
 import Navbar from "../Navbar/Navbar";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import axios from "axios";
 import Validation from "./SignupValidation";
 
 const Register = () => {
-
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
 
   const [errors, setErrors] = useState("");
+  const navigate = useNavigate();
 
   function registerUser(ev) {
     ev.preventDefault();
     setErrors(Validation(name, email, password));
-    if(errors==="")
-    {
-      axios.post("/register", {
-        name,
-        email,
-        password,
-      })
-      .then(res => console.log(res))
-      .catch(err => console.log(err));
+    if (errors.name === "" && errors.email === "" && errors.password === "") {
+      axios
+        .post("/register", {
+          name,
+          email,
+          password,
+        })
+        .then((res) => {
+          navigate("/login");
+        })
+        .catch((err) => console.log(err));
     }
-
-    // axios.post("/register", {
-    //   name,
-    //   email,
-    //   password,
-    // })
   }
 
   return (

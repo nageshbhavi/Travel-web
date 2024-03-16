@@ -13,10 +13,11 @@ app.use(
   })
 );
 
-const db = mysql.createConnection({
+const pool = mysql.createPool({
+  connectionLimit: 10, // Adjust as needed
   host: "localhost",
   user: "root",
-  password: "",
+  password: "nagesh2003",
   database: "travelbuddy",
 });
 
@@ -25,15 +26,35 @@ app.get("/test", (req, res) => {
 });
 
 app.post("/register", (req, res) => {
-  // const { USER_NAME, EMAIL_ID, PASS_WD } = req.body;
-  // res.json({ USER_NAME, EMAIL_ID, PASS_WD });
-  const sql = "INSERT INTO userlogin (`USER_NAME`,`EMAIL_ID`,`PASS_WD`) VALUES (?)";
-  const values = [req.body.USER_NAME,req.body.EMAIL_ID, req.body.PASS_WD];
-  db.query(sql, values, (err, data) => {
+  const { name, email, password } = req.body;
+  const sql =
+    "INSERT INTO userlogin (USER_NAME, EMAIL_ID, PASS_WD) VALUES (?, ?, ?)";
+  const values = [name, email, password];
+
+  pool.query(sql, values, (err, data) => {
     if (err) {
       return res.json(err);
     } else {
       return res.json(data);
+    }
+  });
+});
+
+app.post("/login", (req, res) => {
+  const { email, password } = req.body;
+  const sql =
+    "SELECT * FROM userlogin WHERE `EMAIL_ID`=? AND `PASS_WD`=?";
+  const values = [email, password];
+
+  pool.query(sql, values, (err, data) => {
+    if (err) {
+      return res.json(err);
+    } 
+    if(data.length > 0){
+      return res.json("success");
+    }
+    else{
+      return res.json("fail");
     }
   });
 });

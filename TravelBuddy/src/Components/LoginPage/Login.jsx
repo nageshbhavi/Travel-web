@@ -1,7 +1,8 @@
 import React, { useState } from "react";
 import "./Login.css";
 import Navbar from "../Navbar/Navbar";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
+import axios from "axios";
 import Home from "../Home/Home";
 import Validation from "./LoginValidation";
 
@@ -10,10 +11,27 @@ const Login = () => {
   const [password, setPassword] = useState("");
 
   const [errors, setErrors] = useState("");
+  const navigate = useNavigate();
 
   function loginuser(ev) {
     ev.preventDefault();
     setErrors(Validation(email, password));
+    if (errors.email === "" && errors.password === "") {
+      axios
+        .post("/login", {
+          email,
+          password,
+        })
+        .then((res) => {
+          if(res.data === 'success'){
+            navigate('/')
+          }
+          else{
+            alert("invalid user!")
+          }
+        })
+        .catch((err) => console.log(err));
+    }
   }
   return (
     <>

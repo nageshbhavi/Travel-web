@@ -11,6 +11,8 @@ const Validation = (name, email, password) => {
 
   if (email === "") {
     error.email = "Email cannot be empty!";
+  } else if (!email_pattern.test(email)) {
+    error.email = "Invalid email!";
   } else {
     error.email = "";
   }

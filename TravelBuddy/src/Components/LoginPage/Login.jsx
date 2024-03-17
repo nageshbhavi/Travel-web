@@ -23,14 +23,21 @@ const Login = () => {
           password,
         })
         .then((res) => {
-          if(res.data === 'success'){
-            navigate('/')
-          }
-          else{
-            alert("Invalid user!")
+          if (res.data === "success") {
+            navigate("/");
+          } else {
+            alert("Invalid user!");
           }
         })
-        .catch((err) => console.log(err));
+        // .catch((err) => console.log(err));
+        .catch((err) => {
+          if (err.response && err.response.status === 401) {
+            alert("Invalid Email  or Password!");
+            console.log(err);
+          } else {
+            console.log("Login failed. Please try again later.");
+          }
+        });
     }
   }
   return (

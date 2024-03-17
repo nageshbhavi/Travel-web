@@ -26,7 +26,14 @@ const Register = () => {
         .then((res) => {
           navigate("/login");
         })
-        .catch((err) => console.log(err));
+        .catch((err) => {
+          if (err.response && err.response.status === 400) {
+            alert("Email already exists!");
+            console.log(err);
+          } else {
+            console.log("Registration failed. Please try again later.");
+          }
+        });
     }
   }
 

@@ -27,7 +27,7 @@ const Login = () => {
             navigate('/')
           }
           else{
-            alert("invalid user!")
+            alert("Invalid user!")
           }
         })
         .catch((err) => console.log(err));

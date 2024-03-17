@@ -1,11 +1,11 @@
 const express = require("express");
 const cors = require("cors");
 const mysql = require("mysql");
+const bcrypt = require("bcryptjs");
 
 const app = express();
 
 app.use(express.json());
-
 app.use(
   cors({
     credentials: true,
@@ -14,7 +14,7 @@ app.use(
 );
 
 const pool = mysql.createPool({
-  connectionLimit: 10, // Adjust as needed
+  connectionLimit: 10,
   host: "localhost",
   user: "root",
   password: "nagesh2003",
@@ -29,9 +29,9 @@ app.post("/register", (req, res) => {
   const { name, email, password } = req.body;
   const sql =
     "INSERT INTO userlogin (USER_NAME, EMAIL_ID, PASS_WD) VALUES (?, ?, ?)";
-  const values = [name, email, password];
+  const hashedPassword = bcrypt.hashSync(password, 8);
 
-  pool.query(sql, values, (err, data) => {
+  pool.query(sql, [name, email, hashedPassword], (err, data) => {
     if (err) {
       return res.json(err);
     } else {
@@ -42,21 +42,30 @@ app.post("/register", (req, res) => {
 
 app.post("/login", (req, res) => {
   const { email, password } = req.body;
-  const sql =
-    "SELECT * FROM userlogin WHERE `EMAIL_ID`=? AND `PASS_WD`=?";
-  const values = [email, password];
+  const sql = "SELECT * FROM userlogin WHERE `EMAIL_ID`=?";
 
-  pool.query(sql, values, (err, data) => {
+  pool.query(sql, [email], (err, data) => {
     if (err) {
       return res.json(err);
-    } 
-    if(data.length > 0){
-      return res.json("success");
     }
-    else{
+    if (data.length > 0) {
+      const hashedPassword = data[0].PASS_WD;
+      bcrypt.compare(password, hashedPassword, (compareErr, match) => {
+        if (compareErr) {
+          return res.json(compareErr);
+        }
+        if (match) {
+          return res.json("success");
+        } else {
+          return res.json("fail");
+        }
+      });
+    } else {
       return res.json("fail");
     }
   });
 });
 
-app.listen(9000);
+app.listen(9000, () => {
+  console.log("Server is running on port 9000");
+});

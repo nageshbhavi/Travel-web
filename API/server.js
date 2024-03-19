@@ -2,10 +2,16 @@ const express = require("express");
 const cors = require("cors");
 const mysql = require("mysql");
 const bcrypt = require("bcryptjs");
+const jwt = require("jsonwebtoken");
+const cookieParser = require("cookie-parser");
 
 const app = express();
 
+const jwtSecret = "indvkrsmsnnjsskarmys";
+
 app.use(express.json());
+app.use(cookieParser());
+
 app.use(
   cors({
     credentials: true,
@@ -70,13 +76,19 @@ app.post("/login", (req, res) => {
       return res.status(500).json({ error: "Internal server error" });
     }
     if (data.length > 0) {
+      const userData = data[0];
       const hashedPassword = data[0].PASS_WD;
       bcrypt.compare(password, hashedPassword, (compareErr, match) => {
         if (compareErr) {
           return res.status(500).json({ error: "Internal server error" });
         }
         if (match) {
-          return res.status(200).json("success");
+          jwt.sign({ email:userData.EMAIL_ID, password:hashedPassword }, jwtSecret, {}, (err, token) => {
+            if (err) throw err;
+            res.cookie("token", token);
+            return res.status(200).json(userData);
+          });
+
         } else {
           return res.status(401).json({ error: "Invalid credentials" });
         }

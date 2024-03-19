@@ -57,35 +57,49 @@
 }
 
 .signupbtn {
-  padding: 0.3rem ;
+  padding: 0.4rem ;
   white-space: nowrap;
   border-radius: 0.7rem;
   font-size: 1rem;
   font-weight: 350;
-  border: none;
   transition: all 0.2s ease-in-out;
   border: white  solid 1px;
   background-color: rgba(12, 110, 253, 1);
   color: white;
+  display: flex;
+  text-decoration: none;
   /* box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.2); */
 }
 
 .signupbtn:hover {
   background-color: white;
   color: rgba(12, 110, 253, 1);
+  text-decoration: none;
 }
 
 .userIcon{
-  margin:0 4px;
+  margin: auto 5px;
+  text-decoration: none;
+}
+
+.userIconbar{
+  margin: auto 2px;
+  text-decoration: none;
+}
+
+.username{
+  font-size: 1.2rem;
+  font-weight: 350;
+  text-decoration: none;
 }
 
 .menu-icons{
     display: none;
 }
 
-.navlg{
+/* .navlg{
   margin-left: 20px;
-}
+} */
 
 @media screen and (max-width: 950px) {
     .NavbarItems{

@@ -83,7 +83,7 @@ app.post("/login", (req, res) => {
           return res.status(500).json({ error: "Internal server error" });
         }
         if (match) {
-          jwt.sign({ email:userData.EMAIL_ID, password:hashedPassword }, jwtSecret, {}, (err, token) => {
+          jwt.sign({ email:userData.EMAIL_ID, password:hashedPassword, name:userData.USER_NAME }, jwtSecret, {}, (err, token) => {
             if (err) throw err;
             res.cookie("token", token);
             return res.status(200).json(userData);
@@ -98,6 +98,18 @@ app.post("/login", (req, res) => {
     }
   });
 });
+
+app.get("/profile",(req,res)=>{
+  const {token}=req.cookies;
+  if(token){
+    jwt.verify(token,jwtSecret,{},(err,user)=>{
+      if(err) throw err;
+      res.json(user);
+    })
+  } else{
+    res.json("user not found");
+  }
+})
 
 // Start server
 const PORT = 9000;

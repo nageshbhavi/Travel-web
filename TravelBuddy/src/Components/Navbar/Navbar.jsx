@@ -42,7 +42,7 @@ const Navbar = () => {
             </li>
 
             <li>
-              <Link to={"/login"} className="signuplink">
+              <Link to={user?"/account":"/login"} className="signuplink">
                 <div style={user?{display:"none"}:{display:"block"}}> {"Sign Up"}</div>
 
                 {!!user && (
@@ -60,7 +60,7 @@ const Navbar = () => {
               <i className="fa-solid fa-circle-user fa-xl userIcon"></i>
               {!!user && (
                 <div className="username" style={{ textDecoration: "none" }}>
-                  {user.USER_NAME}
+                  {(user.USER_NAME)}
                 </div>
               )}
             </Link>

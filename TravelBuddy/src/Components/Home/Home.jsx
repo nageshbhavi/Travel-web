@@ -10,7 +10,17 @@ const Home = () => {
     <>
     <Navbar/>
     <div className="homepage">
-
+    <div
+          className="overlay"
+          style={{
+            position: "absolute",
+            top: 0,
+            left: 0,
+            width: "100%",
+            height: "100%",
+            backgroundColor: "rgba(0,0,0,.3)",
+          }}
+        ></div>
       <video autoPlay loop muted src={video} type="video/mp4" ></video>
       {/* <h1>      this is home</h1>  */}
     </div>

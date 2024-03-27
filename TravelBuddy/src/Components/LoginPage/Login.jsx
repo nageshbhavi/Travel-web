@@ -5,7 +5,7 @@ import { Link, useNavigate } from "react-router-dom";
 import axios from "axios";
 import Validation from "./LoginValidation";
 import { UserContext } from "../UserContext/UserContext";
-import video from '../../assets/video1.mp4';
+import video from "../../assets/video1.mp4";
 
 const Login = () => {
   const [email, setEmail] = useState("");
@@ -47,7 +47,25 @@ const Login = () => {
     <>
       <Navbar />
       <div className="loginpage">
-      <video autoPlay loop muted src={video} type="video/mp4" style={{width:"100%", height:"100%", objectFit:"cover"}} ></video>
+        <div
+          className="overlay"
+          style={{
+            position: "absolute",
+            top: 0,
+            left: 0,
+            width: "100%",
+            height: "100%",
+            backgroundColor: "rgba(0,0,0,.3)",
+          }}
+        ></div>
+        <video
+          autoPlay
+          loop
+          muted
+          src={video}
+          type="video/mp4"
+          style={{ width: "100%", height: "100%", objectFit: "cover" }}
+        ></video>
         <div className="login-container">
           <h1 className="loginhead">Login</h1>
           <form className="loginform" onSubmit={loginuser}>

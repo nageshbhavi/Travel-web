@@ -6,6 +6,7 @@ import Register from "./Components/LoginPage/Register.jsx";
 import Home from "./Components/Home/Home.jsx";
 import axios from "axios";
 import { UserContextProvider } from "./Components/UserContext/UserContext.jsx";
+import AccountPage from "./Components/AccountPage/AccountPage.jsx";
 
 axios.defaults.baseURL = "http://localhost:9000";
 axios.defaults.withCredentials = true;
@@ -19,6 +20,7 @@ function App() {
           <Route path="/login" element={<Login />} />
           <Route path="/register" element={<Register />} />
           <Route path="/" element={<Home />} />
+          <Route path="/account" element={<AccountPage />}></Route>
         </Routes>
       </UserContextProvider>
     </>

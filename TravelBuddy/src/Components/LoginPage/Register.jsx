@@ -4,6 +4,7 @@ import Navbar from "../Navbar/Navbar";
 import { Link, useNavigate } from "react-router-dom";
 import axios from "axios";
 import Validation from "./SignupValidation";
+import video from '../../assets/video1.mp4';
 
 const Register = () => {
   const [name, setName] = useState("");
@@ -39,8 +40,9 @@ const Register = () => {
 
   return (
     <>
-      <div>
+      <div className="loginpage">
         <Navbar />
+        <video autoPlay loop muted src={video} type="video/mp4" style={{width:"100%", height:"100%", objectFit:"cover"}} ></video>
         <div className="login-container">
           <h1 className="loginhead">Register</h1>
           <form className="loginform" onSubmit={registerUser}>

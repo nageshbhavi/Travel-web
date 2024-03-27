@@ -1,9 +1,8 @@
-
 .NavbarItems {
   display: flex;
-  justify-content: space-between ;
+  justify-content: space-between;
   align-items: center;
-  padding:0 30px;
+  padding: 0 30px;
   box-shadow: 0 5px 15px 0 rgba(0, 0, 0, 0.2);
   width: 95%;
   height: 60px;
@@ -13,6 +12,9 @@
   left: 50%;
   transform: translate(-50%);
   z-index: 9999;
+
+  -webkit-backdrop-filter: blur(20px);
+  backdrop-filter: blur(20px);
 }
 
 .navbarlogo {
@@ -40,7 +42,7 @@
   text-decoration: none;
   color: white;
   font-size: 1.2rem;
-  font-weight: 300;
+  font-weight: 350;
   padding: 0.3rem 0.3rem;
   white-space: nowrap;
   display: flex;
@@ -48,53 +50,57 @@
 }
 
 .navlinks:hover {
+  /* color: rgb(16, 181, 214); */
   color: black;
   transition: all 0.2s ease-in-out;
 }
 
-.signuplink{
-    display: none;
+.signuplink {
+  text-decoration: none;
+  display: none;
 }
 
 .signupbtn {
-  padding: 0.4rem ;
+  padding: 0.4rem;
   white-space: nowrap;
   border-radius: 0.7rem;
   font-size: 1rem;
   font-weight: 350;
   transition: all 0.2s ease-in-out;
-  border: white  solid 1px;
-  background-color: rgba(12, 110, 253, 1);
+  /* border: white solid 1px; */
+  /* background-color: rgba(12, 110, 253, 1); */
   color: white;
   display: flex;
   text-decoration: none;
   /* box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.2); */
+  
 }
 
 .signupbtn:hover {
-  background-color: white;
-  color: rgba(12, 110, 253, 1);
+  /* background-color: white; */
+  /* color: rgb(2, 67, 69); */
+  color: black;
   text-decoration: none;
 }
 
-.userIcon{
+.userIcon {
   margin: auto 5px;
   text-decoration: none;
 }
 
-.userIconbar{
+.userIconbar {
   margin: auto 2px;
   text-decoration: none;
 }
 
-.username{
+.username {
   font-size: 1.2rem;
   font-weight: 350;
   text-decoration: none;
 }
 
-.menu-icons{
-    display: none;
+.menu-icons {
+  display: none;
 }
 
 /* .navlg{
@@ -102,15 +108,15 @@
 } */
 
 @media screen and (max-width: 950px) {
-    .NavbarItems{
-        z-index: 9999;
-    }
+  .NavbarItems {
+    z-index: 9999;
+  }
   .nav-menu {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     margin: auto;
-    background:rgba(12, 110, 253, 1);
+    background: black;
     width: 100%;
     height: auto;
     position: absolute;
@@ -124,6 +130,7 @@
     transition: all 0.6s ease-in;
     border-radius: 13px;
     display: none;
+
   }
   .nav-menu.active {
     top: 0;
@@ -133,14 +140,14 @@
     display: block;
   }
 
-  .navlinks{
+  .navlinks {
     /* display: block; */
     width: 100%;
     /* font-size: 1.2rem; */
     padding: 2rem 0;
   }
 
-  .navlinks:hover{
+  .navlinks:hover {
     background: white;
     color: black;
     transition: all 0.2s ease-in-out;
@@ -149,9 +156,8 @@
   .signupbtn {
     display: none;
   }
-  
 
-  .signuplink{
+  .signuplink {
     width: 100%;
     padding: 2rem 0;
     display: block;
@@ -159,24 +165,26 @@
     margin: auto;
     width: 80%;
     border-radius: 4px;
-    background: black;
+    background: rgba(12, 110, 253, 1);
     text-decoration: none;
     color: white;
     font-size: 1.2rem;
     letter-spacing: 2px;
   }
-  .signuplink:hover{
+  .signuplink:hover {
     background: white;
     color: black;
     transition: all 0.2s ease-in-out;
   }
 
-  .menu-icons{
+  .menu-icons {
     display: block;
   }
 
-  .menu-icons i{
+  .menu-icons i {
     font-size: 1.2rem;
     color: white;
   }
+
+
 }

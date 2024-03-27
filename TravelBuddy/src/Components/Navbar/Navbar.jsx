@@ -17,7 +17,7 @@ const Navbar = () => {
 
   return (
     <>
-      <nav className="NavbarItems bg-primary">
+      <nav className="NavbarItems">
         <h1 className="navbarlogo">TravelBuddy</h1>
 
         <div className="menu-icons" onClick={handleClick}>
@@ -43,20 +43,26 @@ const Navbar = () => {
 
             <li>
               <Link to={"/login"} className="signuplink">
-                Sign Up
-              </Link>
-            </li>
-            <Link to={"/login"}>
-              {" "}
-              <button className="signupbtn">
-                <i className="fa-solid fa-bars  userIconbar"></i>
-                <i className="fa-solid fa-circle-user fa-xl userIcon"></i>
+                <div style={user?{display:"none"}:{display:"block"}}> {"Sign Up"}</div>
+
                 {!!user && (
-                  <div className="username" style={{textDecoration: 'none'}}>
+                  <div className="username" style={{ textDecoration: "none" }}>
+                    <i className="fa-solid fa-circle-user fa-xl userIcon"></i>
                     {user.USER_NAME}
                   </div>
                 )}
-              </button>
+              </Link>
+            </li>
+            <Link to={user?"/account":"/login"} className="signupbtn">
+              {" "}
+              {/* <button className="signupbtn">              </button> */}
+              <i className="fa-solid fa-bars  userIconbar"style={user?{display:"none"}:{display:"block"}} ></i>
+              <i className="fa-solid fa-circle-user fa-xl userIcon"></i>
+              {!!user && (
+                <div className="username" style={{ textDecoration: "none" }}>
+                  {user.USER_NAME}
+                </div>
+              )}
             </Link>
           </ul>
         </div>

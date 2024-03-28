@@ -1,72 +1,66 @@
-.loginpage{
-    position: absolute;
-    height: 100vh;
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin: auto;
+.loginpage {
+  position: absolute;
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
 }
 
-.login-container{
-    background-color: black;
-    position: absolute;
-    width: 45%;
-    height: auto;
-    top: 0;
-    justify-content:center;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+.login-container {
+  background-color: black;
+  position: absolute;
+  width: 45%;
+  height: auto;
+  top: 0;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 
-    padding: 20px;
-    margin-top: 150px;
-    border-radius: 10px;
-    box-shadow: 0 5px 15px 0 rgba(0, 0, 0, 0.2);
-
-
-
+  padding: 20px;
+  margin-top: 150px;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px 0 rgba(0, 0, 0, 0.2);
 }
 
-.loginhead{
-    text-align: center;
-    font-weight: 600;
-    color: white;
-    font-family: "Merienda", cursive;
+.loginhead {
+  text-align: center;
+  font-weight: 600;
+  color: white;
+  font-family: "Merienda", cursive;
 }
 
-.loginform{
-    margin: 30px auto ;
-    display: flex;
-    flex-direction: column;
-    justify-content:center;
-    height: auto;
-    gap:  15px;
+.loginform {
+  margin: 30px auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: auto;
+  gap: 15px;
 }
 
-.inputbox{
-    padding: 7px;
-    border-radius: 10px;
-    border: none;
+.inputbox {
+  padding: 7px;
+  border-radius: 10px;
+  border: none;
 }
 
-.loginform button{
-    padding: 7px;
-    border: none;
-    border-radius: 10px;
-    color: white;
-    background: rgba(12, 110, 253, 1);
+.loginform button {
+  padding: 7px;
+  border: none;
+  border-radius: 10px;
+  color: white;
+  background: rgba(12, 110, 253, 1);
 }
 
 .loginform button:hover {
-    color: black;
-    background: white;
-    transition: all 0.2s ease-in-out;
+  color: black;
+  background: white;
+  transition: all 0.2s ease-in-out;
 }
 
-.reglink{
-    color: grey;
+.reglink {
+  color: grey;
 }
-
-
-

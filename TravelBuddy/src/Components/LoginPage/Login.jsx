@@ -13,6 +13,7 @@ const Login = () => {
   const [errors, setErrors] = useState("");
   const navigate = useNavigate();
   const { setUser } = useContext(UserContext);
+  // const [ item, setItem ] = useState("");
 
   function loginuser(ev) {
     ev.preventDefault();
@@ -28,6 +29,7 @@ const Login = () => {
             alert("Login Successful!");
             setUser(res.data); // Set user data in context
             navigate("/");
+            localStorage.setItem("user", JSON.stringify(res.data));
           } else {
             alert("Invalid user!");
           }

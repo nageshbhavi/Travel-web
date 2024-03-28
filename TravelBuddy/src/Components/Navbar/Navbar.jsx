@@ -3,7 +3,7 @@ import "./Navbar.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 import { Button } from "react-bootstrap";
 import { Link } from "react-router-dom";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { UserContext } from "../UserContext/UserContext";
 
 const Navbar = () => {
@@ -14,6 +14,16 @@ const Navbar = () => {
   };
 
   const { user } = useContext(UserContext);
+
+  const [userData, setUserData] = useState(null);
+
+  useEffect(() => {
+    // Retrieve user information from localStorage when component mounts
+    const storedUser = localStorage.getItem("user");
+    if (storedUser) {
+      setUserData(JSON.parse(storedUser));
+    }
+  }, []);
 
   return (
     <>
@@ -45,10 +55,10 @@ const Navbar = () => {
               <Link to={user?"/account":"/login"} className="signuplink">
                 <div style={user?{display:"none"}:{display:"block"}}> {"Sign Up"}</div>
 
-                {!!user && (
+                {!!user && userData && (
                   <div className="username" style={{ textDecoration: "none" }}>
                     <i className="fa-solid fa-circle-user fa-xl userIcon"></i>
-                    {user.USER_NAME}
+                    {userData.USER_NAME}
                   </div>
                 )}
               </Link>
@@ -58,9 +68,9 @@ const Navbar = () => {
               {/* <button className="signupbtn">              </button> */}
               <i className="fa-solid fa-bars  userIconbar"style={user?{display:"none"}:{display:"block"}} ></i>
               <i className="fa-solid fa-circle-user fa-xl userIcon"></i>
-              {!!user && (
+              {!!user && userData && (
                 <div className="username" style={{ textDecoration: "none" }}>
-                  {(user.USER_NAME)}
+                  {(userData.USER_NAME)}
                 </div>
               )}
             </Link>

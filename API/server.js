@@ -99,17 +99,21 @@ app.post("/login", (req, res) => {
   });
 });
 
-app.get("/profile",(req,res)=>{
-  const {token}=req.cookies;
-  if(token){
-    jwt.verify(token,jwtSecret,{},(err,user)=>{
-      if(err) throw err;
-      res.json(user);
-    })
-  } else{
-    res.json("user not found");
+app.get("/profile", (req, res) => {
+  const { token } = req.cookies;
+  if (token) {
+    jwt.verify(token, jwtSecret, {}, (err, user) => {
+      if (err) {
+        res.status(401).json({ error: "Unauthorized" });
+      } else {
+        res.status(200).json(user);
+      }
+    });
+  } else {
+    res.status(401).json({ error: "Unauthorized" });
   }
-})
+});
+
 
 // Start server
 const PORT = 9000;

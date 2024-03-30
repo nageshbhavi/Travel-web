@@ -1,10 +1,85 @@
-.accountpage{
-    background-image: url("../../assets/temple.jpg");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+.accountpage {
+  background-image: url("../../assets/rome1.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.profileContainer {
+  /* display: flex;
+    justify-content: space-between;
+    align-items: center; */
+  /* padding: 0 30px; */
+  box-shadow: 0 5px 15px 0 rgba(0, 0, 0, 0.2);
+  width: 95%;
+  height: 90vh;
+  border-radius: 13px;
+  position: fixed;
+  top: 120px;
+  left: 50%;
+  transform: translate(-50%);
+  /* z-index: 9999; */
+  color: white;
+  background-color: white;
+
+  -webkit-backdrop-filter: blur(20px);
+  backdrop-filter: blur(20px);
+}
+
+.accountmenu {
+  border: black 1px;
+  /* background-color: aliceblue; */
+  height: 55px;
+  border-radius: 13px 13px 0 0;
+  padding: 0 20px;
+  display: flex;
+  /* justify-content: center; */
+  align-items: center;
+  list-style: none;
+}
+
+.accountmenu ul{
+    margin-bottom: 0;
+}
+ul {
+    margin-top: 0;
+    /* margin-bottom: 1rem; */
+}
+
+.account-link {
+  text-decoration: none;
+  color: black;
+  font-size: 1.2rem;
+  font-weight: 400;
+  padding: 0 10px;
+}
+
+.active-link{
+    text-decoration: none;
+    /* color: black; */
+    font-size: 1.2rem;
+    font-weight: 400;
+    /* padding: 0 10px; */
+    background-color:#301934;
+    padding:5px 10px;
+    border-radius:12px;
+    color: #fff;
+    transition: all 0.1s ease-in;
+}
+
+.underline{
+    height: 2px;
+    background-color: black;
+    margin: auto;
+    width: 95%;
+    margin-top: 0;
+}
+
+dl, ol, ul {
+    margin-top: 0;
+    margin-bottom: 0;
 }

@@ -28,8 +28,9 @@ const Login = () => {
           if (res.status === 200) {
             alert("Login Successful!");
             setUser(res.data); // Set user data in context
-            navigate("/");
             localStorage.setItem("user", JSON.stringify(res.data));
+            navigate("/");
+            console.log(res.data);
           } else {
             alert("Invalid user!");
           }

@@ -114,6 +114,10 @@ app.get("/profile", (req, res) => {
   }
 });
 
+app.post("/logout", (req, res) => {
+  res.cookie('token','').json(true);
+})
+
 
 // Start server
 const PORT = 9000;

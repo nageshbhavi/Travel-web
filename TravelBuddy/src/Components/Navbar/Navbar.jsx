@@ -65,7 +65,6 @@ const Navbar = () => {
             </li>
             <Link to={user?"/account":"/login"} className="signupbtn">
               {" "}
-              {/* <button className="signupbtn">              </button> */}
               <i className="fa-solid fa-bars  userIconbar"style={user?{display:"none"}:{display:"block"}} ></i>
               <i className="fa-solid fa-circle-user fa-xl userIcon"></i>
               {!!user && userData && (

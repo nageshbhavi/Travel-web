@@ -75,11 +75,19 @@ ul {
     height: 2px;
     background-color: black;
     margin: auto;
-    width: 95%;
+    width: 97%;
     margin-top: 0;
 }
 
 dl, ol, ul {
     margin-top: 0;
     margin-bottom: 0;
+}
+
+.logoutbtn{
+    padding: 4px 6px;
+    color: #fff;
+    background-color: #301934;
+    border-radius: 13px;
+    border: none;
 }

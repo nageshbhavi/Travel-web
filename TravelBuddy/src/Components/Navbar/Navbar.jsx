@@ -5,6 +5,7 @@ import { Button } from "react-bootstrap";
 import { Link } from "react-router-dom";
 import { useState, useEffect } from "react";
 import { UserContext } from "../UserContext/UserContext";
+import axios from "axios";
 
 const Navbar = () => {
   const [clicked, setClicked] = useState(false);
@@ -17,12 +18,19 @@ const Navbar = () => {
 
   const [userData, setUserData] = useState(null);
 
+
   useEffect(() => {
-    // Retrieve user information from localStorage when component mounts
-    const storedUser = localStorage.getItem("user");
-    if (storedUser) {
-      setUserData(JSON.parse(storedUser));
+    async function fetchUserData() {
+      try {
+        const response = await axios.get("http://localhost:9000/profile");
+        const userDataFromServer = response.data;
+        setUserData(userDataFromServer);
+      } catch (error) {
+        console.error("Error fetching user data:", error);
+      }
     }
+
+    fetchUserData();
   }, []);
 
   return (
@@ -58,7 +66,7 @@ const Navbar = () => {
                 {!!user && userData && (
                   <div className="username" style={{ textDecoration: "none" }}>
                     <i className="fa-solid fa-circle-user fa-xl userIcon"></i>
-                    {userData.USER_NAME}
+                    {userData?.name || ""}
                   </div>
                 )}
               </Link>
@@ -69,7 +77,7 @@ const Navbar = () => {
               <i className="fa-solid fa-circle-user fa-xl userIcon"></i>
               {!!user && userData && (
                 <div className="username" style={{ textDecoration: "none" }}>
-                  {(userData.USER_NAME)}
+                  {userData?.name || ""}
                 </div>
               )}
             </Link>

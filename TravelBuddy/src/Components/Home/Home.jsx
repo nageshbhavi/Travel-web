@@ -1,16 +1,50 @@
-import React from "react";
+import React, { useContext, useEffect, useState, useRef} from "react";
 import "./Home.css";
 import Navbar from "../Navbar/Navbar";
-import video from '../../assets/video1.mp4';
-
-
+import video1 from "../../assets/mountain.mp4";
+import video2 from "../../assets/girl.mp4";
+import video3 from "../../assets/beach2.mp4";
 
 const Home = () => {
+  const videos = [video1, video2, video3];
+
+  const videoRef = useRef(null);
+  const currentVideoIndex = useRef(0);
+
+  useEffect(() => {
+    const videoElement = videoRef.current;
+
+    const playNextVideo = () => {
+      if (currentVideoIndex.current < videos.length - 1) {
+        currentVideoIndex.current++;
+        videoElement.src = videos[currentVideoIndex.current];
+        videoElement.play();
+      } else {
+        // Restart from the first video
+        currentVideoIndex.current = 0;
+        videoElement.src = videos[currentVideoIndex.current];
+        videoElement.play();
+      }
+    };
+
+    videoElement.addEventListener("ended", playNextVideo);
+
+    return () => {
+      videoElement.removeEventListener("ended", playNextVideo);
+    };
+  }, [videos]);
+
+  useEffect(() => {
+    // Start playing the first video when the component mounts
+    videoRef.current.src = videos[currentVideoIndex.current];
+    videoRef.current.play();
+  }, [videos]);
+
   return (
     <>
-    <Navbar/>
-    <div className="homepage">
-    <div
+      <Navbar />
+      <div className="homepage">
+        <div
           className="overlay"
           style={{
             position: "absolute",
@@ -21,15 +55,32 @@ const Home = () => {
             backgroundColor: "rgba(0,0,0,.3)",
           }}
         ></div>
-      <video autoPlay loop muted src={video} type="video/mp4" ></video>
-      {/* <h1>      this is home</h1>  */}
-    </div>
+        {/* <video loop autoPlay  muted  type="video/mp4" >
+        <source src={video1}/>
+        <source src={video3}/>
+      </video> */}
+        {/* {videos.map((video, index) => (
+        <video key={index} autoPlay loop muted >
+          <source src={video} type="video/mp4" />
+        </video>
+      ))} */}
+        <video ref={videoRef} autoPlay muted>
+          <source src={videos[0]} type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
+        {/* <h1>      this is home</h1>  */}
+        <div
+          className="homecontainer"
+          style={{ position: "fixed", color: "white" }}
+        >
+          <h1>HOME PAGE</h1>
+        </div>
+      </div>
     </>
   );
 };
 
 export default Home;
-
 
 // import React from "react";
 // import "./Home.css";
@@ -54,5 +105,3 @@ export default Home;
 // };
 
 // export default Home;
-
-

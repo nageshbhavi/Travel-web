@@ -11,46 +11,58 @@ const AccountPage = () => {
   const { ready, user, setUser } = useContext(UserContext);
 
   const [userData, setUserData] = useState(null);
-  const [redirect, setRedirect]=useState(null);
+  const [redirect, setRedirect] = useState(null);
 
   useEffect(() => {
-    // Retrieve user information from localStorage when component mounts
-    const storedUser = localStorage.getItem("user");
-    if (storedUser) {
-      setUserData(JSON.parse(storedUser));
+    async function fetchUserData() {
+      try {
+        const response = await axios.get("http://localhost:9000/profile");
+        const userDataFromServer = response.data;
+        setUserData(userDataFromServer);
+      } catch (error) {
+        console.error("Error fetching user data:", error);
+      }
     }
+
+    fetchUserData();
   }, []);
 
-
-
   if (!ready) {
-    return(<> Loading... <br/>if took too long, to load please refresh the page. </>);
+    return (
+      <>
+        Loading... <br />if took too long, to load please refresh the page.
+      </>
+    );
   }
 
   if (ready && !user && !redirect) {
     return <Navigate to={"/login"} />;
   }
 
-  if(subpage === undefined){
-    subpage='profile';
+  if (subpage === undefined) {
+    subpage = "profile";
   }
 
-  async function logout(){
-    await  axios.post("/logout");
-    setRedirect('/');
-    setUser(null);
+  async function logout() {
+    try {
+      await axios.post("/logout");
+      setRedirect("/");
+      setUser(null);
+    } catch (error) {
+      console.error("Error logging out:", error);
+    }
   }
 
   function linkclasses(type = null) {
     let classes = "account-link";
-    if (type === subpage ) {
+    if (type === subpage) {
       return "active-link";
     }
     return classes;
   }
 
-  if(redirect){
-    return <Navigate to={redirect} />
+  if (redirect) {
+    return <Navigate to={redirect} />;
   }
 
   return (
@@ -68,7 +80,6 @@ const AccountPage = () => {
           }}
         ></div>
         <Navbar />
-        {/* AccountPage for user: {userData ? userData.USER_NAME : ""} */}
         <div className="profileContainer">
           <div className="account-links">
             <ul className="accountmenu">
@@ -95,20 +106,33 @@ const AccountPage = () => {
               </li>
             </ul>
             <div className="underline"></div>
-          </div> 
+          </div>
 
-          {subpage==='profile' && (
-            <div className="profileInfo" style={{
-                color:"black",
-                textAlign:"left",
-                marginTop:"5%",
-                fontWeight:600,
-                marginLeft:"5%"
-            }}>
-                Welcome! <br />
-                Name : {userData.USER_NAME}
-                <br />Email : {userData.EMAIL_ID}
-                <br /><button onClick={logout} className="logoutbtn">Logout</button>
+          {subpage === "profile" && (
+            <div
+              className="profileInfo"
+              style={{
+                color: "black",
+                textAlign: "left",
+                marginTop: "5%",
+                fontWeight: 600,
+                marginLeft: "5%",
+              }}
+            >
+              Welcome! <br />
+              Name : {userData?.name || ""}
+              <br />
+              Email : {userData?.email || ""}
+              <br />
+              <button onClick={logout} className="logoutbtn">
+                Logout
+              </button>
+            </div>
+          )}
+
+          {subpage==="visited" && (
+            <div className="visitedcontainer">
+                
             </div>
           )}
         </div>

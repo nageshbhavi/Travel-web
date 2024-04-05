@@ -1,9 +1,9 @@
 import React, { useContext, useEffect, useState, useRef} from "react";
 import "./Home.css";
 import Navbar from "../Navbar/Navbar";
-import video1 from "../../assets/mountain.mp4";
+import video1 from "../../assets/video2.mp4";
 import video2 from "../../assets/girl.mp4";
-import video3 from "../../assets/beach2.mp4";
+import video3 from "../../assets/video1.mp4";
 
 const Home = () => {
   const videos = [video1, video2, video3];

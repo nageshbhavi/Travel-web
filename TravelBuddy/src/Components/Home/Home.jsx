@@ -75,6 +75,11 @@ const Home = () => {
         >
           <h1>HOME PAGE</h1>
         </div>
+        <div className="slidebars" style={{display:"flex", position:"fixed", marginTop:"500px"}}>
+          <div className="slidebar" style={{backgroundColor:"white", height:"3px", width:"35px"}}></div>
+          <div className="slidebar" style={{backgroundColor:"white", height:"3px", width:"35px", margin:"0 5px"}}></div>
+          <div className="slidebar" style={{backgroundColor:"white", height:"3px", width:"35px"}}></div>
+        </div>
       </div>
     </>
   );

@@ -1,0 +1,61 @@
+.about-container {
+    padding: 40px;
+    padding-top: 100px;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .intro-section, .mission-section, .team-section, .contact-section {
+    margin-bottom: 40px;
+  }
+  
+  .intro-section h1, .mission-section h2, .team-section h2, .contact-section h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+  }
+  
+  .intro-section p, .mission-section p, .contact-section p {
+    font-size: 1.25rem;
+    line-height: 1.6;
+  }
+  
+  .team-cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 50px;
+    justify-content: center;
+  }
+  
+  .team-card {
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    padding: 20px;
+    width: 300px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .team-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 50%;
+    margin-bottom: 15px;
+  }
+  
+  .team-card h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+  }
+  
+  .team-card p {
+    font-size: 1rem;
+    margin-bottom: 5px;
+  }
+  
+  @media (max-width: 768px) {
+    .team-cards {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+  

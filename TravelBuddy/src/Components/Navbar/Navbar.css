@@ -122,7 +122,7 @@
     flex-direction: column;
     justify-content: flex-start;
     margin: auto;
-    background: black;
+    background: whitesmoke;
     width: 100%;
     /* height: auto; */
     max-height: calc(100vh - 60px);
@@ -160,8 +160,8 @@
   }
 
   .navlinks:hover {
-    background: white;
-    color: black;
+    background: black;
+    color: white;
     transition: all 0.2s ease-in-out;
   }
 
@@ -195,7 +195,7 @@
 
   .menu-icons i {
     font-size: 1.2rem;
-    color: white;
+    color: black;
   }
 
 

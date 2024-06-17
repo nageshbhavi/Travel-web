@@ -1,0 +1,17 @@
+[
+    {
+      "id": 1,
+      "name": "Alice Johnson",
+      "role": "Founder & CEO",
+      "bio": "Alice is a seasoned traveler with over 20 years of experience exploring the globe.",
+      "image": "https://via.placeholder.com/150"
+    },
+    {
+      "id": 2,
+      "name": "Bob Smith",
+      "role": "CTO",
+      "bio": "Bob is the tech genius behind our platform, ensuring a seamless experience for all users.",
+      "image": "https://via.placeholder.com/150"
+    }
+  ]
+  

@@ -1,10 +1,11 @@
 import "./App.css";
 import { Route, Routes } from "react-router-dom";
-import Navbar from "./Components/Navbar/Navbar.jsx";
 import Login from "./Components/LoginPage/Login.jsx";
 import Register from "./Components/LoginPage/Register.jsx";
 import Home from "./Components/Home/Home.jsx";
 import Destinations from "./Components/Destinations/Destinations.jsx";
+import About from "./Components/About/About.jsx";
+
 import axios from "axios";
 import { UserContextProvider } from "./Components/UserContext/UserContext.jsx";
 import AccountPage from "./Components/AccountPage/AccountPage.jsx";
@@ -23,6 +24,7 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/account/:subpage?" element={<AccountPage />}></Route>
           <Route path="/destinations" element={<Destinations />}></Route>
+          <Route path="/about" element={<About />}></Route>
         </Routes>
       </UserContextProvider>
     </>

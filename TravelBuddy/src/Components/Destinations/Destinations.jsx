@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import './Destinations.css';
 import placesData from './places.json';
 import Navbar from '../Navbar/Navbar';
+import Footer from "../Footer/Footer.jsx";
 
 const Destinations = () => {
   const [places, setPlaces] = useState([]);
@@ -86,6 +87,7 @@ const Destinations = () => {
         </div>
       )}
     </div>
+    <Footer/>
     </>
   );
 };

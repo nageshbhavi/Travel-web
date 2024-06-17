@@ -1,0 +1,1011 @@
+[
+    {
+      "id": 1,
+      "name": "Paris, France",
+      "description": "The capital city of France, known for its art, fashion, and culture.",
+      "image": "https://media.istockphoto.com/id/1345426734/photo/eiffel-tower-paris-river-seine-sunset-twilight-france.jpg?s=612x612&w=0&k=20&c=I5rAH5d_-Yyag8F0CKzk9vzMr_1rgkAASGTE11YMh9A=",
+      "reviews": [
+        {
+          "author": "John Doe",
+          "text": "Beautiful city with amazing architecture and culture."
+        },
+        {
+          "author": "Jane Smith",
+          "text": "Loved the food and the art museums!"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "name": "Tokyo, Japan",
+      "description": "The capital city of Japan, known for its modernity and traditional temples.",
+      "image": "https://assets.vogue.in/photos/5ce41cfc4a30b3f5c612bf13/16:9/w_1920,h_1080,c_limit/Your-ultimate-guide-to-Tokyo-Japan1.jpg",
+      "reviews": [
+        {
+          "author": "Alice Johnson",
+          "text": "A perfect blend of modern and traditional. Amazing food!"
+        },
+        {
+          "author": "Bob Brown",
+          "text": "Loved the hustle and bustle of the city!"
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "name": "Taj Mahal, Agra",
+      "description": "An ivory-white marble mausoleum on the south bank of the Yamuna river in the Indian city of Agra.",
+      "image": "https://discovery.sndimg.com/content/dam/images/discovery/fullset/2020/2/21/thumbnail.png.rend.hgtvcom.1280.960.suffix/1582329440048.png",
+      "reviews": [
+        {
+          "author": "Chris Evans",
+          "text": "A true wonder of the world. The architecture is breathtaking."
+        },
+        {
+          "author": "Emma Watson",
+          "text": "Fascinating history and beautiful monument."
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "name": "Goa",
+      "description": "A state on the southwestern coast of India known for its beaches, vibrant nightlife, ancient churches, and laid-back atmosphere.",
+      "image": "https://www.agoda.com/wp-content/uploads/2023/02/Goa-overview-things-to-do-in-goa.jpg",
+      "reviews": [
+        {
+          "author": "David Lee",
+          "text": "Amazing beaches and great nightlife."
+        },
+        {
+          "author": "Sophia Kim",
+          "text": "Loved the laid-back atmosphere and the friendly locals."
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "name": "Kerala",
+      "description": "A state on India's southwest coast, known for its lush greenery, backwaters, beaches, and hill stations.",
+      "image": "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/0f/46/81/cd/grassroots-wayanad.jpg?w=700&h=-1&s=1",
+      "reviews": [
+        {
+          "author": "Michael Scott",
+          "text": "Beautiful landscapes and amazing backwater cruises."
+        },
+        {
+          "author": "Rachel Green",
+          "text": "A very peaceful and relaxing destination."
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "name": "Rajasthan",
+      "description": "A state in northwest India, known for its colorful festivals, majestic forts, and opulent palaces.",
+      "image": "https://static.vecteezy.com/system/resources/previews/011/084/232/non_2x/full-picture-of-hawa-mahal-of-rajasthan-photo.jpg",
+      "reviews": [
+        {
+          "author": "Ross Geller",
+          "text": "Rich in culture and history. The forts are amazing!"
+        },
+        {
+          "author": "Monica Geller",
+          "text": "Loved the vibrant festivals and the beautiful palaces."
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "name": "Hampi",
+      "description": "An ancient city in Karnataka, known for its ruins of the Vijayanagara Empire, including temples, palaces, and marketplaces.",
+      "image": "https://media.istockphoto.com/id/1270774245/photo/hampi-stone-chariot-the-antique-stone-art-piece-from-unique-angle-with-amazing-blue-sk.jpg?s=612x612&w=0&k=20&c=LugJgTiUd9y_8MO2KDQ2I4IvOD_7BH5x_R8iRApqEUg=",
+      "reviews": [
+        {
+          "author": "Phoebe Buffay",
+          "text": "The ruins are absolutely fascinating."
+        },
+        {
+          "author": "Chandler Bing",
+          "text": "A great place for history buffs."
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "name": "Varanasi",
+      "description": "A holy city on the banks of the Ganges River in Uttar Pradesh, known for its Hindu pilgrimage sites and cremation rituals.",
+      "image": "https://t4.ftcdn.net/jpg/04/08/25/05/360_F_408250543_MVaEVGeWxb4FiFy7mEGKj8nfYkwoAZON.jpg",
+      "reviews": [
+        {
+          "author": "Joey Tribbiani",
+          "text": "A very spiritual and enlightening experience."
+        },
+        {
+          "author": "Rachel Green",
+          "text": "The evening aarti is a must-see!"
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "name": "Munnar",
+      "description": "A hill station in Kerala, known for its lush tea plantations, scenic waterfalls, and cool climate.",
+      "image": "https://cf.bstatic.com/xdata/images/hotel/max1024x768/408557519.jpg?k=dcba205eed1f1f5479e88e41e27232886a1e95d6ae506c9c6b526ec0e4368e10&o=&hp=1",
+      "reviews": [
+        {
+          "author": "Ross Geller",
+          "text": "Beautiful tea gardens and breathtaking views."
+        },
+        {
+          "author": "Monica Geller",
+          "text": "Loved the cool climate and the serene environment."
+        }
+      ]
+    },
+    {
+      "id": 10,
+      "name": "Mysore Palace",
+      "description": "A historical palace and a royal residence in the city of Mysore, Karnataka, India.",
+      "image": "https://www.fabhotels.com/blog/wp-content/uploads/2019/05/Mysore-palace_600.jpg",
+      "reviews": [
+        {
+          "author": "Chandler Bing",
+          "text": "A magnificent palace with a lot of history."
+        },
+        {
+          "author": "Phoebe Buffay",
+          "text": "Beautiful architecture and rich history."
+        }
+      ]
+    },
+    {
+      "id": 11,
+      "name": "Darjeeling",
+      "description": "A hill station in the Indian state of West Bengal, known for its tea gardens, scenic views of the Himalayas, and Darjeeling Himalayan Railway.",
+      "image": "https://hikerwolf.com/wp-content/uploads/2020/04/Darjeeling-toy-train-route.jpg",
+      "reviews": [
+        {
+          "author": "Joey Tribbiani",
+          "text": "The toy train ride is a must-do!"
+        },
+        {
+          "author": "Rachel Green",
+          "text": "Amazing tea gardens and beautiful scenery."
+        }
+      ]
+    },
+    {
+      "id": 12,
+      "name": "Andaman and Nicobar Islands",
+      "description": "An Indian union territory consisting of an archipelago in the Bay of Bengal between India and Myanmar.",
+      "image": "https://travelsetu.com/apps/uploads/new_destinations_photos/destination/2023/12/15/f3966004be85ac83b66b11a0213611aa_1000x1000.jpeg",
+      "reviews": [
+        {
+          "author": "Michael Scott",
+          "text": "Pristine beaches and crystal clear waters."
+        },
+        {
+          "author": "Rachel Green",
+          "text": "A paradise for water sports lovers."
+        }
+      ]
+    },
+    {
+      "id": 13,
+      "name": "Khajuraho",
+      "description": "A group of Hindu and Jain temples in Chhatarpur district, Madhya Pradesh, India, notable for their erotic sculptures.",
+      "image": "https://www.oyorooms.com/travel-guide/wp-content/uploads/2023/03/Exploring-the-Mystical-Beauty-of-the-Khajuraho-Temple-1280x720.jpg",
+      "reviews": [
+        {
+          "author": "Ross Geller",
+          "text": "Amazing sculptures and rich history."
+        },
+        {
+          "author": "Monica Geller",
+          "text": "A must-visit for history and art lovers."
+        }
+      ]
+    },
+    {
+      "id": 14,
+      "name": "Sydney, Australia",
+      "description": "The largest city in Australia, known for its Sydney Opera House and beautiful harbor.",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/Sydney_Opera_House_and_Harbour_Bridge_Dusk_%282%29_2019-06-21.jpg/640px-Sydney_Opera_House_and_Harbour_Bridge_Dusk_%282%29_2019-06-21.jpg",
+      "reviews": [
+        {
+          "author": "Anna Williams",
+          "text": "The Opera House is stunning, and the harbor views are breathtaking."
+        },
+        {
+          "author": "James Brown",
+          "text": "Loved the beaches and the vibrant city life."
+        }
+      ]
+    },
+    {
+      "id": 15,
+      "name": "New York City, USA",
+      "description": "The largest city in the USA, known for its skyscrapers, Central Park, and diverse culture.",
+      "image": "https://cdn.britannica.com/61/93061-050-99147DCE/Statue-of-Liberty-Island-New-York-Bay.jpg",
+      "reviews": [
+        {
+          "author": "Emily Davis",
+          "text": "The city that never sleeps. So much to see and do!"
+        },
+        {
+          "author": "Michael Johnson",
+          "text": "Loved the energy and the diverse culture."
+        }
+      ]
+    },
+    {
+      "id": 16,
+      "name": "Rio de Janeiro, Brazil",
+      "description": "A vibrant city known for its Copacabana beach, Sugarloaf Mountain, and Christ the Redeemer statue.",
+      "image": "https://media.timeout.com/images/105482246/image.jpg",
+      "reviews": [
+        {
+          "author": "Laura Wilson",
+          "text": "Amazing beaches and a great place for a carnival."
+        },
+        {
+          "author": "Robert Thomas",
+          "text": "The view from Sugarloaf Mountain is spectacular."
+        }
+      ]
+    },
+    {
+      "id": 17,
+      "name": "Cairo, Egypt",
+      "description": "The capital city of Egypt, known for its ancient pyramids and the Sphinx.",
+      "image": "https://wallpaperswide.com/download/egyptian_pyramids___cairo_egypt_africa-wallpaper-2560x1440.jpg",
+      "reviews": [
+        {
+          "author": "Sarah White",
+          "text": "A journey back in time. The pyramids are awe-inspiring."
+        },
+        {
+          "author": "David Harris",
+          "text": "Incredible history and fascinating sites."
+        }
+      ]
+    },
+    {
+      "id": 18,
+      "name": "Cape Town, South Africa",
+      "description": "A port city on South Africa’s southwest coast, known for its Table Mountain.",
+      "image": "https://cdn.britannica.com/41/75841-050-FAAE44F0/Table-Mountain-Cape-Town-Western-Bay-South.jpg",
+      "reviews": [
+        {
+          "author": "Jennifer Green",
+          "text": "Table Mountain offers stunning views of the city."
+        },
+        {
+          "author": "Christopher Taylor",
+          "text": "Beautiful beaches and great food."
+        }
+      ]
+    },
+    {
+      "id": 19,
+      "name": "London, England",
+      "description": "The capital city of England, known for its rich history, architecture, and cultural attractions.",
+      "image": "https://wallpapercave.com/wp/wp5018696.jpg",
+      "reviews": [
+        {
+          "author": "Elizabeth Brown",
+          "text": "Loved the history and the vibrant cultural scene."
+        },
+        {
+          "author": "William Thompson",
+          "text": "A beautiful city with so much to see and do."
+        }
+      ]
+    },
+    {
+      "id": 20,
+      "name": "Barcelona, Spain",
+      "description": "A city on the coast of northeastern Spain, known for its art and architecture.",
+      "image": "https://wallpapercave.com/wp/wp1825719.jpg",
+      "reviews": [
+        {
+          "author": "Samantha Evans",
+          "text": "The architecture by Gaudí is simply stunning."
+        },
+        {
+          "author": "George Martin",
+          "text": "Loved the beaches and the vibrant nightlife."
+        }
+      ]
+    },
+    {
+      "id": 21,
+      "name": "Dubai, UAE",
+      "description": "A city known for its modern architecture, luxury shopping, and vibrant nightlife scene.",
+      "image": "https://i.pinimg.com/originals/f3/66/44/f36644bd38403be4b7b6a0bf8a8cbdde.jpg",
+      "reviews": [
+        {
+          "author": "Paul King",
+          "text": "A city of luxury and grandeur. Loved it!"
+        },
+        {
+          "author": "Mary Wright",
+          "text": "Amazing shopping and incredible buildings."
+        }
+      ]
+    },
+    {
+      "id": 22,
+      "name": "Singapore",
+      "description": "A city-state in Southeast Asia, known for its tropical climate and multicultural population.",
+      "image": "https://wallpapercave.com/wp/wp2113023.jpg",
+      "reviews": [
+        {
+          "author": "Linda Hall",
+          "text": "Clean, modern, and very friendly people."
+        },
+        {
+          "author": "Brian Young",
+          "text": "Great food and amazing skyline views."
+        }
+      ]
+    },
+    {
+      "id": 23,
+      "name": "Bangkok, Thailand",
+      "description": "The capital city of Thailand, known for its ornate shrines and vibrant street life.",
+      "image": "https://www.b2hotel.com/wp-content/uploads/2022/11/bangkok_4.jpg",
+      "reviews": [
+        {
+          "author": "Jessica Lopez",
+          "text": "Vibrant street life and amazing temples."
+        },
+        {
+          "author": "Mark Anderson",
+          "text": "A great place for food lovers."
+        }
+      ]
+    },
+    {
+      "id": 24,
+      "name": "Rome, Italy",
+      "description": "The capital city of Italy, known for its nearly 3,000 years of globally influential art, architecture, and culture.",
+      "image": "https://images.pexels.com/photos/1797161/pexels-photo-1797161.jpeg?cs=srgb&dl=pexels-chaitaastic-1797161.jpg&fm=jpg",
+      "reviews": [
+        {
+          "author": "Angela Carter",
+          "text": "Rich in history and culture. A must-visit!"
+        },
+        {
+          "author": "Steven Harris",
+          "text": "Loved the historical sites and the food."
+        }
+      ]
+    },
+    {
+      "id": 25,
+      "name": "Berlin, Germany",
+      "description": "The capital city of Germany, known for its art scene and modern landmarks like the Berlin Wall.",
+      "image": "https://free4kwallpapers.com/uploads/originals/2015/09/07/germany-berlin.jpg",
+      "reviews": [
+        {
+          "author": "Peter Robinson",
+          "text": "A city full of history and modern attractions."
+        },
+        {
+          "author": "Nancy Edwards",
+          "text": "Loved the vibrant art scene and nightlife."
+        }
+      ]
+    },
+    {
+      "id": 26,
+      "name": "Toronto, Canada",
+      "description": "The largest city in Canada, known for its CN Tower and vibrant cultural scene.",
+      "image": "https://static01.nyt.com/images/2018/01/17/world/17toronto-sub/toronto-sub-videoSixteenByNineJumbo1600.jpg",
+      "reviews": [
+        {
+          "author": "Amy Collins",
+          "text": "Great city with lots to do and see."
+        },
+        {
+          "author": "Kevin Adams",
+          "text": "Loved the multicultural vibe and the food."
+        }
+      ]
+    },
+    {
+      "id": 27,
+      "name": "Hong Kong",
+      "description": "A city and special administrative region of China, known for its skyline and deep natural harbor.",
+      "image": "https://i.pinimg.com/originals/79/1e/b0/791eb025da34cc00fce031da9fb58502.jpg",
+      "reviews": [
+        {
+          "author": "Sharon Parker",
+          "text": "Amazing skyline and great shopping."
+        },
+        {
+          "author": "Matthew Wilson",
+          "text": "Loved the blend of East and West cultures."
+        }
+      ]
+    },
+    {
+      "id": 28,
+      "name": "Moscow, Russia",
+      "description": "The capital city of Russia, known for its historic Red Square and the Kremlin.",
+      "image": "https://wallpapercave.com/wp/wp1826158.jpg",
+      "reviews": [
+        {
+          "author": "Edward Cook",
+          "text": "Rich in history and beautiful architecture."
+        },
+        {
+          "author": "Samantha Cooper",
+          "text": "Loved the cultural attractions and the historic sites."
+        }
+      ]
+    },
+    {
+      "id": 29,
+      "name": "Beijing, China",
+      "description": "The capital city of China, known for its modern architecture and ancient sites such as the Great Wall and the Forbidden City.",
+      "image": "https://static.vecteezy.com/system/resources/previews/032/492/387/large_2x/the-forbidden-city-in-beijing-china-travel-and-architecture-background-landscape-view-of-the-forbidden-city-in-beijing-china-panorama-ai-generated-free-photo.jpg",
+      "reviews": [
+        {
+          "author": "Lisa Sanchez",
+          "text": "Amazing historical sites and modern architecture."
+        },
+        {
+          "author": "Patrick Diaz",
+          "text": "A city of contrasts, full of surprises."
+        }
+      ]
+    },
+    {
+      "id": 30,
+      "name": "Vienna, Austria",
+      "description": "The capital city of Austria, known for its artistic and intellectual legacy shaped by residents like Mozart, Beethoven, and Sigmund Freud.",
+      "image": "https://images6.alphacoders.com/735/735027.jpg",
+      "reviews": [
+        {
+          "author": "Rebecca Foster",
+          "text": "A city rich in history and culture."
+        },
+        {
+          "author": "Anthony Hughes",
+          "text": "Beautiful architecture and amazing music scene."
+        }
+      ]
+    },
+    {
+      "id": 31,
+      "name": "Mexico City, Mexico",
+      "description": "The densely populated capital of Mexico, known for its Templo Mayor and the Palacio de Bellas Artes.",
+      "image": "https://cdn.pixabay.com/photo/2017/01/27/20/43/mexico-2014178_1280.jpg",
+      "reviews": [
+        {
+          "author": "Nicole Ramirez",
+          "text": "Vibrant culture and incredible food."
+        },
+        {
+          "author": "Carlos Ortiz",
+          "text": "Rich history and lively atmosphere."
+        }
+      ]
+    },
+    {
+      "id": 32,
+      "name": "Istanbul, Turkey",
+      "description": "A major city in Turkey that straddles Europe and Asia across the Bosphorus Strait.",
+      "image": "https://images6.alphacoders.com/602/602804.jpg",
+      "reviews": [
+        {
+          "author": "Lauren Howard",
+          "text": "A city of rich history and diverse culture."
+        },
+        {
+          "author": "Brandon Perez",
+          "text": "Amazing historical sites and great food."
+        }
+      ]
+    },
+    {
+      "id": 33,
+      "name": "Athens, Greece",
+      "description": "The capital city of Greece, known for its ancient landmarks such as the Acropolis and the Parthenon.",
+      "image": "https://mymodernmet.com/wp/wp-content/uploads/2021/04/classical-ancient-greek-buildings-architecture-parthenon-athens-acropolis-my-modern-met-3.jpg",
+      "reviews": [
+        {
+          "author": "Maria Mitchell",
+          "text": "A city with a rich history and amazing architecture."
+        },
+        {
+          "author": "Andrew Walker",
+          "text": "Loved exploring the ancient ruins."
+        }
+      ]
+    },
+    {
+      "id": 34,
+      "name": "Lisbon, Portugal",
+      "description": "The hilly, coastal capital city of Portugal, known for its cafe culture and soulful Fado music.",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT7LRlLKPN_cZ3xAqGKM66FRYH4gsySB4NmDkdZO_EqAOX1q9F4KCQ-mR74EFrBnyjvMjU&usqp=CAU",
+      "reviews": [
+        {
+          "author": "Jessica Wood",
+          "text": "Beautiful city with a rich culture."
+        },
+        {
+          "author": "Daniel Lee",
+          "text": "Great food, friendly people, and stunning views."
+        }
+      ]
+    },
+    {
+      "id": 35,
+      "name": "Amsterdam, Netherlands",
+      "description": "The capital city of the Netherlands, known for its artistic heritage, elaborate canal system, and narrow houses.",
+      "image": "https://i.pinimg.com/originals/de/31/a0/de31a05390de4d5e33f409cccdce83aa.jpg",
+      "reviews": [
+        {
+          "author": "Michael Scott",
+          "text": "Loved the canals and the relaxed atmosphere."
+        },
+        {
+          "author": "Pam Beesly",
+          "text": "Beautiful city with great museums."
+        }
+      ]
+    },
+    {
+      "id": 36,
+      "name": "Seoul, South Korea",
+      "description": "The capital city of South Korea, known for its modern skyscrapers, high-tech subways, and pop culture.",
+      "image": "https://ik.imagekit.io/tvlk/blog/2018/09/Gyeongbokgung-Palace.jpg?tr=dpr-2,w-675",
+      "reviews": [
+        {
+          "author": "Dwight Schrute",
+          "text": "A city with a perfect blend of modernity and tradition."
+        },
+        {
+          "author": "Jim Halpert",
+          "text": "Loved the food and the bustling city life."
+        }
+      ]
+    },
+    {
+      "id": 37,
+      "name": "Buenos Aires, Argentina",
+      "description": "The capital city of Argentina, known for its European-style architecture and rich cultural life.",
+      "image": "https://cdn.pixabay.com/photo/2017/06/10/14/11/colon-theater-2389927_1280.jpg",
+      "reviews": [
+        {
+          "author": "Holly Flax",
+          "text": "Amazing city with a vibrant culture and great food."
+        },
+        {
+          "author": "Michael Scott",
+          "text": "Loved the tango and the architecture."
+        }
+      ]
+    },
+    {
+      "id": 39,
+      "name": "Mumbai, India",
+      "description": "The financial capital of India, known for its bustling city life and Bollywood film industry.",
+      "image": "https://www.marshallsindia.com/ImageBuckets/ItemImages/ZA%209152.jpg?id=75",
+      "reviews": [
+        {
+          "author": "Kelly Kapoor",
+          "text": "A city full of life and vibrant culture."
+        },
+        {
+          "author": "Ryan Howard",
+          "text": "Loved the food and the energy of the city."
+        }
+      ]
+    },
+     {
+        "id": 40,
+        "name": "Bali, Indonesia",
+        "description": "An Indonesian island known for its forested volcanic mountains, iconic rice paddies, beaches, and coral reefs.",
+        "image": "https://wallpapercave.com/wp/wp4037069.jpg",
+        "reviews": [
+          {
+            "author": "Angela Martin",
+            "text": "A paradise with beautiful landscapes and rich culture."
+          },
+          {
+            "author": "Oscar Martinez",
+            "text": "Loved the beaches and the friendly locals."
+          }
+        ]
+      },
+      {
+        "id": 42,
+        "name": "Havana, Cuba",
+        "description": "The capital city, port, and major commercial center of Cuba.",
+        "image": "https://wallpapers.com/images/hd/el-capitolio-cuba-9ih29gg4me2qfrbn.jpg",
+        "reviews": [
+          {
+            "author": "Meredith Palmer",
+            "text": "A city with a unique charm and rich history."
+          },
+          {
+            "author": "Creed Bratton",
+            "text": "Loved the old cars and the vibrant culture."
+          }
+        ]
+      },
+      {
+        "id": 46,
+        "name": "Prague, Czech Republic",
+        "description": "The capital city of the Czech Republic, known for its Old Town Square, with colorful baroque buildings and Gothic churches.",
+        "image": "https://cdn.pixabay.com/photo/2016/01/03/18/00/prague-1119791_640.jpg",
+        "reviews": [
+          {
+            "author": "Angela Martin",
+            "text": "A city with stunning architecture and rich history."
+          },
+          {
+            "author": "Oscar Martinez",
+            "text": "Loved the medieval streets and the charming atmosphere."
+          }
+        ]
+      },
+      {
+        "id": 48,
+        "name": "Florence, Italy",
+        "description": "The capital city of the Italian region of Tuscany, known for its Renaissance art and architecture.",
+        "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSN-oL9ChO3yupQWqTZN7RJ_2r0xnOSvXVdwQ&s",
+        "reviews": [
+          {
+            "author": "Pam Beesly",
+            "text": "A city with incredible art and beautiful architecture."
+          },
+          {
+            "author": "Jim Halpert",
+            "text": "Loved the museums and the historic sites."
+          }
+        ]
+      },
+      {
+        "id": 49,
+        "name": "New Delhi, India",
+        "description": "The capital of India, known for its rich history and cultural heritage.",
+        "image": "https://h2.gifposter.com/bingImages/IndiaGate_1920x1080.jpg",
+        "reviews": [
+          {
+            "author": "Stanley Hudson",
+            "text": "A city with a mix of old and new."
+          },
+          {
+            "author": "Kevin Malone",
+            "text": "Loved the historic sites and the vibrant culture."
+          }
+        ]
+      },
+      {
+        "id": 50,
+        "name": "Manali, India",
+        "description": "A high-altitude Himalayan resort town in India’s northern Himachal Pradesh state.",
+        "image": "https://www.naturetravelagency.com/uploads/1703234831best%20time%20to%20visit%20Manali%20for%20snowfall.jpg",
+        "reviews": [
+          {
+            "author": "Angela Martin",
+            "text": "Beautiful landscapes and a perfect getaway."
+          },
+          {
+            "author": "Oscar Martinez",
+            "text": "Loved the mountains and the scenic views."
+          }
+        ]
+      },
+      {
+        "id": 51,
+        "name": "Udaipur, India",
+        "description": "A city in the western Indian state of Rajasthan, known for its lakes and palaces.",
+        "image": "https://exquisiteindianholidays.com/wp-content/uploads/2022/07/udaipurcity.jpg",
+        "reviews": [
+          {
+            "author": "Pam Beesly",
+            "text": "A city with beautiful lakes and palaces."
+          },
+          {
+            "author": "Jim Halpert",
+            "text": "Loved the historic sites and the serene environment."
+          }
+        ]
+      },
+      {
+        "id": 52,
+        "name": "Zurich, Switzerland",
+        "description": "The largest city in Switzerland, known for its well-preserved medieval old town.",
+        "image": "https://switzerland-tour.com/storage/media/Zurich/Zurich-s-Old-Town.jpg",
+        "reviews": [
+          {
+            "author": "Angela Martin",
+            "text": "A city with stunning views and rich culture."
+          },
+          {
+            "author": "Oscar Martinez",
+            "text": "Loved the old town and the beautiful lakes."
+          }
+        ]
+      },
+      {
+        "id": 55,
+        "name": "Cancun, Mexico",
+        "description": "A Mexican city on the Yucatán Peninsula bordering the Caribbean Sea, known for its beaches, numerous resorts, and nightlife.",
+        "image": "https://www.wallpapers13.com/wp-content/uploads/2017/09/Cancun-Mexico-Beach-Beach-Tropical-Summer-HD-Wallpapers-3840x2160-1.jpg",
+        "reviews": [
+          {
+            "author": "Pam Beesly",
+            "text": "Beautiful beaches and a perfect vacation spot."
+          },
+          {
+            "author": "Jim Halpert",
+            "text": "Loved the resorts and the vibrant nightlife."
+          }
+        ]
+      },
+      {
+        "id": 56,
+        "name": "Auckland, New Zealand",
+        "description": "A major city in the north of New Zealand’s North Island, known for its impressive skyline and beautiful natural surroundings.",
+        "image": "https://wallsdesk.com/wp-content/uploads/2017/01/Auckland-Wallpaper-.jpg",
+        "reviews": [
+          {
+            "author": "Dwight Schrute",
+            "text": "A city with stunning natural beauty and rich culture."
+          },
+          {
+            "author": "Michael Scott",
+            "text": "Loved the outdoor activities and the friendly locals."
+          }
+        ]
+      },
+      {
+        "id": 60,
+        "name": "Ho Chi Minh City, Vietnam",
+        "description": "A vibrant city known for its French colonial landmarks, including Notre-Dame Cathedral, and a history of the Vietnam War.",
+        "image": "https://as1.ftcdn.net/v2/jpg/01/70/43/18/1000_F_170431801_5LRZpmKq0Yjsu9aJsDvJBrIxbmqUjize.jpg",
+        "reviews": [
+          {
+            "author": "Angela Martin",
+            "text": "A city with a rich cultural heritage and history."
+          },
+          {
+            "author": "Oscar Martinez",
+            "text": "Loved the bustling streets and the historic landmarks."
+          }
+        ]
+      },
+      {
+        "id": 61,
+        "name": "Jaisalmer, India",
+        "description": "A city in the Indian state of Rajasthan, known as the 'Golden City' for its yellow sandstone architecture.",
+        "image": "https://images.pexels.com/photos/16534745/pexels-photo-16534745.jpeg?cs=srgb&dl=pexels-axp-photography-500641970-16534745.jpg&fm=jpg",
+        "reviews": [
+          {
+            "author": "Pam Beesly",
+            "text": "A mesmerizing desert city with stunning architecture."
+          },
+          {
+            "author": "Jim Halpert",
+            "text": "Loved the camel rides and the sunset views."
+          }
+        ]
+      },
+      {
+        "id": 62,
+        "name": "Shillong, India",
+        "description": "The capital of Meghalaya, known for its picturesque landscapes and vibrant culture.",
+        "image": "https://www.paradiseunexplored.com/blog/images/post/Shad%20Suk%20Mynsiem.jpg",
+        "reviews": [
+          {
+            "author": "Angela Martin",
+            "text": "A serene hill station with beautiful waterfalls."
+          },
+          {
+            "author": "Oscar Martinez",
+            "text": "Loved the local music and the lush green surroundings."
+          }
+        ]
+      },
+      {
+        "id": 63,
+        "name": "Kolkata, India",
+        "description": "The capital of the Indian state of West Bengal, known for its grand colonial architecture, art galleries, and cultural festivals.",
+        "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR5qrO1y5mUz_6_atMee6GS76ytTrpnZm0TUA&s",
+        "reviews": [
+          {
+            "author": "Michael Scott",
+            "text": "A city with a rich cultural heritage and amazing food."
+          },
+          {
+            "author": "Dwight Schrute",
+            "text": "Loved the historical landmarks and the vibrant markets."
+          }
+        ]
+      },
+      {
+        "id": 64,
+        "name": "Rishikesh, India",
+        "description": "A city in India’s northern state of Uttarakhand, known as the 'Yoga Capital of the World' and a major center for spiritual learning.",
+        "image": "https://www.riverstonecamps.com/wp-content/uploads/2019/04/Yoga-in-rishikesh.jpg",
+        "reviews": [
+          {
+            "author": "Pam Beesly",
+            "text": "A peaceful place with a spiritual vibe."
+          },
+          {
+            "author": "Jim Halpert",
+            "text": "Loved the yoga retreats and the Ganges river."
+          }
+        ]
+      },
+      {
+        "id": 65,
+        "name": "Hyderabad, India",
+        "description": "The capital of southern India's Telangana state, known for its historic sites, including the Golconda Fort and Charminar.",
+        "image": "https://travelsetu.com/apps/uploads/new_destinations_photos/destination/2024/01/02/8f6093aebbc74bb6ca61e415fe436d3b_1000x1000.jpg",
+        "reviews": [
+          {
+            "author": "Stanley Hudson",
+            "text": "A city with rich history and delicious cuisine."
+          },
+          {
+            "author": "Kevin Malone",
+            "text": "Loved the biryani and the historic forts."
+          }
+        ]
+      },
+      {
+        "id": 66,
+        "name": "Amritsar, India",
+        "description": "A city in the northwestern Indian state of Punjab, known for the Golden Temple, a central religious site for Sikhs.",
+        "image": "https://cdn.pixabay.com/photo/2018/01/15/10/41/amritsar-3083693_1280.jpg",
+        "reviews": [
+          {
+            "author": "Pam Beesly",
+            "text": "A holy city with a beautiful temple and serene atmosphere."
+          },
+          {
+            "author": "Jim Halpert",
+            "text": "Loved the Golden Temple and the hospitality of the locals."
+          }
+        ]
+      },
+      {
+        "id": 67,
+        "name": "Lucknow, India",
+        "description": "The capital city of the Indian state of Uttar Pradesh, known for its Mughal and colonial-era architecture.",
+        "image": "https://wallpapercave.com/wp/wp7203043.jpg",
+        "reviews": [
+          {
+            "author": "Michael Scott",
+            "text": "A city with historical charm and delicious food."
+          },
+          {
+            "author": "Dwight Schrute",
+            "text": "Loved the monuments and the rich cultural heritage."
+          }
+        ]
+      },
+      {
+        "id": 68,
+        "name": "Coorg, India",
+        "description": "A rural district in the southwest Indian state of Karnataka, known for its coffee plantations, lush greenery, and waterfalls.",
+        "image": "https://www.hotelierindia.com/cloud/2022/04/22/coorg_pic.jpeg",
+        "reviews": [
+          {
+            "author": "Pam Beesly",
+            "text": "A tranquil place with beautiful coffee plantations."
+          },
+          {
+            "author": "Jim Halpert",
+            "text": "Loved the scenic beauty and the coffee."
+          }
+        ]
+      },
+      {
+        "id": 69,
+        "name": "Ooty, India",
+        "description": "A hill station in the southern Indian state of Tamil Nadu, known for its tea gardens, rolling hills, and cool climate.",
+        "image": "https://assets.gqindia.com/photos/62f67dd24c3aadbd8ac31c68/master/pass/Nilgiri-Mountain-Toy-Train.jpg",
+        "reviews": [
+          {
+            "author": "Stanley Hudson",
+            "text": "A charming hill station with stunning views."
+          },
+          {
+            "author": "Kevin Malone",
+            "text": "Loved the tea gardens and the cool climate."
+          }
+        ]
+      },
+      {
+        "id": 70,
+        "name": "Mahabalipuram, India",
+        "description": "A town in the south Indian state of Tamil Nadu, known for its ancient temples and rock-cut sculptures.",
+        "image": "https://cdn.pixabay.com/photo/2018/05/16/10/41/mahabalipuram-3405407_1280.jpg",
+        "reviews": [
+          {
+            "author": "Angela Martin",
+            "text": "A historical town with beautiful temples and sculptures."
+          },
+          {
+            "author": "Oscar Martinez",
+            "text": "Loved the ancient architecture and the coastal view."
+          }
+        ]
+      },
+      {
+        "id": 71,
+        "name": "Bengaluru, India",
+        "description": "The capital of India's southern Karnataka state, known for its parks, nightlife, and as the center of India's high-tech industry.",
+        "image": "https://youimg1.tripcdn.com/target/100610000000p0zpg8B5C.jpg",
+        "reviews": [
+          {
+            "author": "Angela Martin",
+            "text": "A bustling city with a mix of modernity and tradition."
+          },
+          {
+            "author": "Oscar Martinez",
+            "text": "Loved the parks and the vibrant tech scene."
+          }
+        ]
+      },
+      {
+        "id": 73,
+        "name": "Chennai, India",
+        "description": "The capital of the Indian state of Tamil Nadu, known for its beaches, temples, and culinary traditions.",
+        "image": "https://s3.india.com/wp-content/uploads/2022/07/Marina-beach.jpg",
+        "reviews": [
+          {
+            "author": "Pam Beesly",
+            "text": "A city with beautiful beaches and rich traditions."
+          },
+          {
+            "author": "Jim Halpert",
+            "text": "Loved the temples and the food."
+          }
+        ]
+      },
+      {
+        "id": 74,
+        "name": "Pondicherry, India",
+        "description": "A French colonial settlement in India until 1954, now a Union Territory town bounded by the southeastern Tamil Nadu state.",
+        "image": "https://hikerwolf.com/wp-content/uploads/2020/03/WhatsApp-Image-2020-03-31-at-3.18.20-PM-1.jpeg",
+        "reviews": [
+          {
+            "author": "Stanley Hudson",
+            "text": "A serene place with beautiful colonial architecture."
+          },
+          {
+            "author": "Kevin Malone",
+            "text": "Loved the beach and the French influence."
+          }
+        ]
+      },
+      {
+        "id": 75,
+        "name": "Assam, India",
+        "description": "A state in northeastern India known for its wildlife, archaeological sites, and tea plantations.",
+        "image": "https://media.istockphoto.com/id/1134043134/photo/women-harvest-tea-leaves-in-tea-plantation-assam-india.jpg?s=612x612&w=0&k=20&c=tDc1I0a740psoqGGc6fHoPYhhADdTpSY-e2C7hLgkkA=",
+        "reviews": [
+          {
+            "author": "Angela Martin",
+            "text": "A beautiful state with lush tea gardens and rich culture."
+          },
+          {
+            "author": "Oscar Martinez",
+            "text": "Loved the wildlife sanctuaries and the tea plantations."
+          }
+        ]
+      }
+
+    ]

@@ -12,3 +12,209 @@ video{
     height: 100%;
     object-fit: cover;
 }
+
+/* Home.css */
+.homepage {
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+  }
+  
+  .background-video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 0;
+  }
+  
+  .homecontainer {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-align: center;
+    z-index: 2;
+    padding: 20px;
+    width: 80%;
+    max-width: 600px;
+  }
+  
+  .homecontainer h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+  }
+  
+  .homecontainer p {
+    font-size: 1.25rem;
+    margin-bottom: 20px;
+  }
+  
+  .cta-button {
+    padding: 10px 20px;
+    font-size: 1rem;
+    background-color: #007BFF;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+  }
+  
+  .slidebars {
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    bottom: 20px;
+    width: 100%;
+    z-index: 2;
+  }
+  
+  .slidebar {
+    background-color: white;
+    height: 3px;
+    width: 35px;
+    margin: 0 5px;
+  }
+  
+  .content {
+    padding: 40px 20px;
+    text-align: center;
+  }
+  
+  .popular-destinations .destinations,
+  .latest-reviews .reviews,
+  .user-testimonials .testimonials {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+  }
+  
+  .destination, .review, .testimonial {
+    width: 100%;
+    max-width: 300px;
+    margin-bottom: 20px;
+  }
+  
+  .destination img {
+    width: 100%;
+    border-radius: 10px;
+  }
+  
+  .review, .testimonial {
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  footer {
+    padding: 20px;
+    background-color: #333;
+    color: white;
+    text-align: center;
+  }
+  
+  .footer-links a {
+    color: white;
+    margin: 0 10px;
+    text-decoration: none;
+  }
+  
+  @media (min-width: 768px) {
+    .homecontainer h1 {
+      font-size: 4rem;
+    }
+
+    .homecontainer{
+        padding-top: 70px;
+    }
+  
+    .homecontainer p {
+      font-size: 1.5rem;
+    }
+  }
+  
+  @media (max-width: 767px) {
+    .cta-button {
+      width: 100%;
+      max-width: 300px;
+      margin: 0 auto;
+    }
+    .homecontainer{
+        padding-top: 90px;
+    }
+    .homecontainer p {
+        font-size: small;
+    }
+  }
+
+
+  /* Home.css */
+
+/* Styles for popular destinations */
+.popular-destinations {
+    padding: 40px 0;
+  }
+  
+  .destinations {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+  }
+  
+  .destination {
+    flex: 1;
+    text-align: center;
+  }
+  
+  .destination img {
+    width: 100%; /* Ensure the image takes full width of its container */
+    height: 200px; /* Set a fixed height for uniformity */
+    object-fit: cover; /* Maintain aspect ratio while covering the entire area */
+  }
+  
+  /* Styles for latest reviews and user testimonials */
+  .latest-reviews,
+  .user-testimonials {
+    padding: 40px 0;
+  }
+  
+  .reviews,
+  .testimonials {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+  }
+  
+  .review,
+  .testimonial {
+    flex: 1;
+    background-color: #f0f0f0;
+    padding: 20px;
+    border-radius: 8px;
+  }
+  
+  .review p,
+  .testimonial p {
+    margin-bottom: 10px;
+  }
+  
+  .review h4,
+  .testimonial h4 {
+    margin-top: 10px;
+  }
+  
+  

@@ -50,7 +50,7 @@ const Navbar = () => {
               </Link>
             </li>
             <li>
-              <Link className="navlinks">Destinations</Link>
+              <Link to={"/destinations"} className="navlinks">Destinations</Link>
             </li>
             <li>
               <Link className="navlinks">About Us</Link>

@@ -24,7 +24,7 @@
   /* text-align: center; */
   margin: auto;
   margin-left: 0;
-  color: white;
+  color: black;
   font-family: "Merienda", cursive;
 }
 
@@ -41,7 +41,7 @@
 
 .navlinks {
   text-decoration: none;
-  color: white;
+  color: black;
   font-size: 1.2rem;
   font-weight: 350;
   padding: 0.3rem 0.3rem;
@@ -52,7 +52,7 @@
 
 .navlinks:hover {
   /* color: rgb(16, 181, 214); */
-  color: black;
+  color: rgb(146, 102, 212);
   transition: all 0.2s ease-in-out;
 }
 
@@ -70,7 +70,7 @@
   transition: all 0.2s ease-in-out;
   /* border: white solid 1px; */
   /* background-color: rgba(12, 110, 253, 1); */
-  color: white;
+  color: black;
   display: flex;
   text-decoration: none;
   /* box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.2); */
@@ -80,7 +80,7 @@
 .signupbtn:hover {
   /* background-color: white; */
   /* color: rgb(2, 67, 69); */
-  color: black;
+  color: rgb(146, 102, 212);
   text-decoration: none;
 }
 

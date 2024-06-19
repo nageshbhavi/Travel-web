@@ -9,6 +9,7 @@
 }
 
 body{
-    background-image: url(/TravelBuddy/src/assets/beach-1236581_1280.jpg);
+    /* background-image: url(/TravelBuddy/src/assets/beach-1236581_1280.jpg); */
     overflow-y: auto;
+    background-color: #f0f8ff;
 }

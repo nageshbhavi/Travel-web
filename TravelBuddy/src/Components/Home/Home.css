@@ -11,6 +11,7 @@
   .homepage p {
     font-size: 1.2rem;
     font-weight: 350;
+    color: white; /* Ensure text color is white */
   }
   
   video {
@@ -63,21 +64,30 @@
     margin-bottom: 20px;
     padding-top: 50px;
     font-family: "Merienda", cursive;
+    color: white;
   }
   
   .homecontainer p {
     font-size: 1.25rem;
-    margin-bottom: 20px;
+    line-height: 1.6;
+    margin-bottom: 30px;
   }
   
   .cta-button {
-    padding: 10px 20px;
-    font-size: 1rem;
+    display: inline-block;
+    padding: 12px 24px;
+    font-size: 1.1rem;
     background-color: #007BFF;
     border: none;
-    border-radius: 5px;
-    color: white;
+    border-radius: 25px;
+    color: #fff;
     cursor: pointer;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+  }
+
+  .cta-button:hover {
+    background-color: #0056b3;
   }
   
   .slidebars {
@@ -110,7 +120,9 @@
     flex-wrap: wrap;
   }
   
-  .destination, .review, .testimonial {
+  .destination,
+  .review,
+  .testimonial {
     width: 100%;
     max-width: 300px;
     margin-bottom: 20px;
@@ -123,7 +135,8 @@
     border-radius: 10px;
   }
   
-  .review, .testimonial {
+  .review,
+  .testimonial {
     padding: 20px;
     background-color: white;
     border-radius: 10px;
@@ -167,3 +180,77 @@
     }
   }
   
+  .homecontainer p {
+    font-size: 1.25rem;
+    line-height: 1.6;
+    margin-bottom: 30px;
+  }
+
+  /****** new css *****/
+
+  
+
+  
+  .destination, .review, .testimonial {
+    width: calc(33.33% - 20px);
+    max-width: 300px;
+    margin-bottom: 30px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s, box-shadow 0.3s;
+  }
+  
+  .destination:hover, .review:hover, .testimonial:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  }
+  
+  .destination img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px 10px 0 0;
+  }
+  
+  .review, .testimonial {
+    padding: 20px;
+  }
+  
+  .review p, .testimonial p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    margin-bottom: 15px;
+  }
+  
+  .review h4, .testimonial h4 {
+    font-size: 1rem;
+    font-weight: 500;
+    color: #555;
+  }
+  
+  /* Responsive adjustments */
+  @media (max-width: 1024px) {
+    .destination, .review, .testimonial {
+      width: calc(50% - 20px);
+    }
+  }
+  
+  @media (max-width: 767px) {
+    .homecontainer h1 {
+      font-size: 2.5rem;
+    }
+  
+    .homecontainer p {
+      font-size: 1rem;
+    }
+  
+    .content h2 {
+      font-size: 2rem;
+    }
+  
+    .destination, .review, .testimonial {
+      width: 100%;
+    }
+  }

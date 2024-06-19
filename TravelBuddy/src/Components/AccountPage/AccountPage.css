@@ -1,91 +1,202 @@
-.accountpage {
+.account-page {
   background-image: url("../../assets/rome1.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  height: 100vh;
+  min-height: 100vh;
   display: flex;
+  flex-direction: column;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start;
+  padding-top: 80px; /* Ensure space for Navbar */
+}
+
+.profile-container {
+  width: 90%;
+  max-width: 800px; /* Increased max-width for a more spacious layout */
+  background-color: rgba(255, 255, 255, 0.9);
+  border-radius: 10px;
+  padding: 20px;
+  margin-top: 20px;
+  box-shadow: 0 5px 15px 0 rgba(0, 0, 0, 0.2);
+}
+
+.account-links {
+  /* background-color: #fff; */
+  border-radius: 10px 10px 0 0;
+  padding: 10px 20px;
+  margin-bottom: 20px;
+}
+
+.account-menu {
+  list-style: none;
+  padding: 0;
+  display: flex;
+}
+
+.account-menu li {
+  margin-right: 20px;
+}
+
+.account-link,
+.active-link {
+  text-decoration: none;
+  font-size: 1.2rem;
+  font-weight: 400;
+  color: #333;
+  padding: 10px;
+  border-radius: 10px;
+  transition: background-color 0.3s ease;
+}
+
+.active-link {
+  background-color: #301934;
+  color: #fff;
+}
+
+.underline {
+  height: 2px;
+  background-color: #000;
+  width: 100%;
+  margin-top: 10px;
+}
+
+.content-container {
+  padding: 20px; /* Add padding for content */
+}
+
+.profile-info {
+  color: #333;
+  padding: 20px;
+}
+
+.profile-info h2 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+.profile-info p {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+}
+
+.logout-btn {
+  padding: 8px 16px;
+  background-color: #301934;
+  color: #fff;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background-color 0.3s ease;
+}
+
+.logout-btn:hover {
+  background-color: #501e45;
+}
+
+.visited-container,
+.upcoming-container {
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px 0 rgba(0, 0, 0, 0.2);
+  margin-top: 20px;
+}
+
+.visited-container h2,
+.upcoming-container h2 {
+  font-size: 1.8rem;
+  margin-bottom: 10px;
+}
+
+
+
+/* added later */
+/* Add styles for the account page */
+.accountpage {
+  padding: 20px;
+  background-color: #f7f7f7;
 }
 
 .profileContainer {
-  /* display: flex;
-    justify-content: space-between;
-    align-items: center; */
-  /* padding: 0 30px; */
-  box-shadow: 0 5px 15px 0 rgba(0, 0, 0, 0.2);
-  width: 95%;
-  height: 90vh;
-  border-radius: 13px;
-  position: fixed;
-  top: 120px;
-  left: 50%;
-  transform: translate(-50%);
-  /* z-index: 9999; */
-  color: white;
-  background-color: white;
-
+  max-width: 800px;
+  margin: 0 auto;
 }
 
 .accountmenu {
-  border: black 1px;
-  /* background-color: aliceblue; */
-  height: 55px;
-  border-radius: 13px 13px 0 0;
-  padding: 0 20px;
   display: flex;
-  /* justify-content: center; */
-  align-items: center;
-  list-style: none;
+  justify-content: center;
+  margin-bottom: 20px;
 }
 
-.accountmenu ul{
-    margin-bottom: 0;
+.accountmenu ul {
+  list-style: none;
+  padding: 0;
 }
-ul {
-    margin-top: 0;
-    /* margin-bottom: 1rem; */
+
+.accountmenu li {
+  display: inline;
+  margin: 0 10px;
 }
 
 .account-link {
   text-decoration: none;
-  color: black;
+  color: #301934;
   font-size: 1.2rem;
-  font-weight: 400;
-  padding: 0 10px;
 }
 
-.active-link{
-    text-decoration: none;
-    /* color: black; */
-    font-size: 1.2rem;
-    font-weight: 400;
-    /* padding: 0 10px; */
-    background-color:#301934;
-    padding:5px 10px;
-    border-radius:12px;
-    color: #fff;
-    transition: all 0.1s ease-in;
+.active-link {
+  /* font-weight: bold; */
+  /* text-decoration: underline; */
 }
 
-.underline{
-    height: 2px;
-    background-color: black;
-    margin: auto;
-    width: 97%;
-    margin-top: 0;
+.visited-container {
+  margin-top: 20px;
 }
 
-dl, ol, ul {
-    margin-top: 0;
-    margin-bottom: 0;
+.visited-places {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
 }
 
-.logoutbtn{
-    padding: 5px 10px;
-    color: #fff;
-    background-color: #301934;
-    border-radius: 13px;
-    border: none;
+.visited-place-card {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  cursor: pointer;
+  flex: 1 1 calc(33.333% - 20px);
+  max-width: calc(33.333% - 20px);
+  position: relative;
+}
+
+.visited-place-card h3 {
+  margin-top: 0;
+}
+
+.visited-place-card img {
+  max-width: 100%;
+  border-radius: 10px;
+}
+
+.delete-button {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 1.2rem;
+  color: red;
+}
+
+.logoutbtn {
+  padding: 10px 20px;
+  color: #fff;
+  background-color: #301934;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
 }

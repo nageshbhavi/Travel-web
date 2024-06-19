@@ -11,7 +11,7 @@ const About = () => {
     <div className="about-container">
       <section className="intro-section">
         <h1>About Us</h1>
-        <p>Welcome to Your Travel Diary! We are a community of travel enthusiasts dedicated to sharing and discovering amazing travel experiences.</p>
+        <p>Welcome to TravelBuddy! We are a vibrant community of travel enthusiasts who are passionate about sharing our adventures and discovering new and exciting travel experiences. Our mission is to connect like-minded travelers from around the globe, provide valuable insights, and make every journey more memorable. Whether you're a seasoned explorer or planning your first trip, TravelBuddy is here to inspire, guide, and support you on your travel adventures.</p>
       </section>
 
       <section className="mission-section">

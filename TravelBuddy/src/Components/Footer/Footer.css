@@ -4,6 +4,11 @@ footer {
     color: white;
     text-align: center;
   }
+
+  footer p{
+    color: white;
+    font-weight: lighter;
+  }
   
   .footer-links a {
     color: white;
